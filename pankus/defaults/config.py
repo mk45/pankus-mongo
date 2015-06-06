@@ -37,3 +37,22 @@ stress_key='strs'
 sources_key='src'
 destinations_key='dst'
 selectivity_key='sel'
+
+# surplus weight for cut-offs
+sd_surplus=0
+
+# dendryt pred succ
+predecessor_key='x'
+successor_key='y'
+
+
+
+# collection names
+line_conn_name="line_conn"
+connection_name = "connection"
+crs_name="crs"
+dendryt_name="dendryt"
+featured_point_name="featured_point"
+point_name="point"
+sd_point_name="sd_point"
+stress_name="stress"

@@ -13,6 +13,7 @@ class MongoCollectionStorageFactory(object):
         coll = MongoClient()[db_name][name]
         self.coll = coll
         self.name = name
+        self.indexes = indexes
         assert isinstance(indexes, list)
         for index in indexes:
             coll.create_index(index)

@@ -3,7 +3,7 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.database.mongo_collection import MongoCollectionStorageFactory
-from pankus.defaults.config import start_key,end_key
+from pankus.defaults.config import start_key,end_key,line_conn_name
 
 """Storage for line_conn
 
@@ -15,13 +15,12 @@ data:
     s - start point id (indexed field)
     e - end point id (indexed field)
     throughput: - throughput of connection
-    outputs:
-        strs
-        junc
-        intl
+    strs - stress on edge (in output)
+    junc - edges end junction situation (in output)
+    intl - interlace situation on edge (in output)
     ...
 
 
 """
 
-line_conn = MongoCollectionStorageFactory('line_conn',[start_key,end_key])
+line_conn = MongoCollectionStorageFactory(line_conn_name,[start_key,end_key])

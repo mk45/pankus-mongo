@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
-# from pankus.storage.sd_point import sd_point
+
 import json
-from pankus.storage.sd_point import sd_point
-from pankus.storage.crs import crs
+from pankus.storages.sd_point import sd_point
+from pankus.storages.crs import crs
 from pankus.defaults.config import \
     sd_id_key,sources_key,destinations_key,point_key,sd_filename,crs_key
 from pankus.helpers.pbar import Pbar
