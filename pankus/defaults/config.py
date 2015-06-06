@@ -38,6 +38,11 @@ sources_key='src'
 destinations_key='dst'
 selectivity_key='sel'
 
+#ring
+ring_key='r'
+to_ring_total_key="to_ring_total"
+in_ring_total_key="in_ring_total"
+
 # surplus weight for cut-offs
 sd_surplus=0
 
@@ -56,3 +61,6 @@ featured_point_name="featured_point"
 point_name="point"
 sd_point_name="sd_point"
 stress_name="stress"
+src_dst_name="src_dst"
+ring_name="ring"
+ring_total_name="ring_total"
