@@ -1,6 +1,5 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-__author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.storages.sd_point import sd_point
 from pankus.storages.src_dst import src_dst
@@ -10,12 +9,11 @@ from pankus.defaults.config import \
 import argparse
 
 
-# does nothing but revrites
 def make_src_dst(selectivity=None):
     """
 
-    :param selectivity: selectivity in parts pre million for all sd points
-    If parameter not provided selectivity in sd_points must be provided
+    :param selectivity: selectivity in part per million
+    makes selectivity or takes it from input data
     """
     new_src_dst = []
     pbar = Pbar('make src_dst: ',sd_point.count())
@@ -37,7 +35,7 @@ def make_src_dst(selectivity=None):
                 destinations_key: point[destinations_key],
                 selectivity_key: point[selectivity_key]
             })
-    src_dst.delete_many({})
+    src_dst.drop()
     src_dst.insert_many(new_src_dst)
     pbar.finish()
 

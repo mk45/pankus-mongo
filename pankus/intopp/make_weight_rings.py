@@ -7,7 +7,8 @@ from pankus.storages.featured_point import featured_point
 from pankus.storages.dendryt import dendryt
 from pankus.helpers.pbar import Pbar
 from pankus.defaults.config import \
-    start_key,end_key,id_key,weight_key,sd_start_key,sd_end_key,sd_id_key,ring_key
+    start_key,end_key,id_key,weight_key,\
+    sd_start_key,sd_end_key,sd_id_key,ring_key
 import argparse
 
 

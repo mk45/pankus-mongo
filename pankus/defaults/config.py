@@ -32,6 +32,7 @@ net_out_filename='net_out'
 sd_out_filename='sd_out'
 # stress
 stress_key='strs'
+motion_quantity_key='q'
 
 # src dst selec
 sources_key='src'
@@ -64,3 +65,4 @@ stress_name="stress"
 src_dst_name="src_dst"
 ring_name="ring"
 ring_total_name="ring_total"
+motion_exchange_name="motion_exchange"
