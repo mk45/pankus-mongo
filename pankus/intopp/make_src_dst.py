@@ -1,5 +1,6 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
+__author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.storages.sd_point import sd_point
 from pankus.storages.src_dst import src_dst
@@ -35,7 +36,7 @@ def make_src_dst(selectivity=None):
                 destinations_key: point[destinations_key],
                 selectivity_key: point[selectivity_key]
             })
-    src_dst.drop()
+    src_dst.delete_many({})
     src_dst.insert_many(new_src_dst)
     pbar.finish()
 

@@ -16,7 +16,7 @@ def make_connections():
     new_conn = []
     pbar = Pbar('make conn: ', line_conn.count())
     for edge in line_conn.find():
-        pbar.update(pbar.currval + 1)
+        pbar.plus_one()
         assert weight_key in edge
 
         stress_amount = sum([stress_part.get(stress_key, 0)

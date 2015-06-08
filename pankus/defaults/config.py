@@ -33,6 +33,21 @@ sd_out_filename='sd_out'
 # stress
 stress_key='strs'
 motion_quantity_key='q'
+junction_key='junc'
+interlace_key='intl'
+
+#determinants
+interlace_determinant_key='intl_det'
+junction_determinant_key='junc_det'
+
+#junction
+ordered_predecessors_key = 'ordered_predecessors'
+ordered_successors_key = 'ordered_successors'
+
+#ordered junction/interlace info
+ordered_junction_info_key = "ordered_junc"
+ordered_interlace_info_key = "ordered_intl"
+
 
 # src dst selec
 sources_key='src'
@@ -66,3 +81,5 @@ src_dst_name="src_dst"
 ring_name="ring"
 ring_total_name="ring_total"
 motion_exchange_name="motion_exchange"
+turn_info_name="turn_info"
+stress_matrix_name="stress_matrix"

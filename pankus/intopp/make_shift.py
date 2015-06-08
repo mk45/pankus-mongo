@@ -1,5 +1,6 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
+__author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.storages.src_dst import src_dst
 from pankus.storages.motion_exchange import motion_exchange
@@ -37,7 +38,7 @@ def make_shift(shift_type):
             sources_key: new_point_src,
             selectivity_key: point[selectivity_key]
         })
-    src_dst.delete_many()
+    src_dst.delete_many({})
     src_dst.insert_many(new_src_dst)
     pbar.finish()
 

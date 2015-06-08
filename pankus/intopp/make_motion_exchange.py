@@ -23,7 +23,7 @@ def make_motion_exchange():
     pbar = Pbar('make motion exchange: ',src_dst.count())
     motion_exchange.delete_many({})
     for src_point in src_dst.find():
-        pbar.update(pbar.currval + 1)
+        pbar.plus_one()
         me = []
         for dst_point in src_dst.find():
             r = ring.find_one(

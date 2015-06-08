@@ -1,7 +1,8 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
+__author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
-# from pankus.storage.ram_src_dst import ram_src_dst as src_dst
+
 from pankus.storages.motion_exchange import motion_exchange
 from pankus.storages.sd_point import sd_point
 from pankus.helpers.pbar import Pbar
@@ -23,7 +24,7 @@ def normalize_to_original():
             motion_quantity_key: me[motion_quantity_key] * src_total / motion_exchange_total
         })
 
-    motion_exchange.drop()
+    motion_exchange.delete_many({})
     motion_exchange.insert_many(new_motion_exchange)
     pbar.finish()
 
