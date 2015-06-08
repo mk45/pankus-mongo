@@ -3,6 +3,7 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 import cmath
+from pankus.helpers.pbar import Pbar
 from pankus.storages.line_conn import line_conn as line_conn
 from pankus.storages.turn_info import turn_info
 from pankus.defaults.config import \

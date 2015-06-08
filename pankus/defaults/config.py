@@ -63,10 +63,12 @@ in_ring_total_key="in_ring_total"
 sd_surplus=0
 
 # dendryt pred succ
-predecessor_key='x'
-successor_key='y'
+successor_key='x'
+predecessor_key='y'
 
-
+#path option
+path_key='path'
+delta_key='d'
 
 # collection names
 line_conn_name="line_conn"
@@ -83,3 +85,4 @@ ring_total_name="ring_total"
 motion_exchange_name="motion_exchange"
 turn_info_name="turn_info"
 stress_matrix_name="stress_matrix"
+path_name= "path"

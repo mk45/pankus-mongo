@@ -14,15 +14,16 @@ from pankus.defaults.config import \
 
 
 def make_stress_matrix(fraction):
-    stress_matrix.delete_many({})
+
     new_sm = []
-    pbar = Pbar('sm: ',motion_exchange.count())
+    pbar = Pbar('stress matrix: ',motion_exchange.count())
     for record in motion_exchange.find():
         pbar.plus_one()
         start_id = featured_point.find_one({sd_id_key: record[sd_start_key]})[id_key]
         end_id = featured_point.find_one({sd_id_key: record[sd_end_key]})[id_key]
         quantity = float(record[motion_quantity_key]) * fraction
         new_sm.append({start_key: start_id, end_key: end_id, motion_quantity_key: quantity})
+    stress_matrix.delete_many({})
     stress_matrix.insert_many(new_sm)
     pbar.finish()
 
