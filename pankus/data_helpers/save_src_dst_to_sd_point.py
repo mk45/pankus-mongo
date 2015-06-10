@@ -16,18 +16,24 @@ def save_src_dst_to_sd_point(src_name, dst_name):
     :return:
 
     """
+
+    #type and length assertion
+    assert src_name > ''
+    assert dst_name > ''
+
     pbar = Pbar('saving : ',src_dst.count())
+    ram_sd_point=RamCollection(sd_point,[sd_id_key])
     for sd in src_dst.find():
         pbar.plus_one()
 
-        sd_point.update_one({
-            sd_id_key: sd[sd_id_key]
-        }, {'$set': {
-            src_name: sd[sources_key],
-            dst_name: sd[destinations_key]
-        }
-        })
+        sd_p=ram_sd_point.find_one({sd_id_key: sd[sd_id_key]})
+        sd_p[src_name]=sd[sources_key]
+        sd_p[dst_name]=sd[destinations_key]
+
+    sd_point.delete_many({})
+    sd_point.insert_many(ram_sd_point.find())
     pbar.finish()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

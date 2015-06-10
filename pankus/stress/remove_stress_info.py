@@ -7,24 +7,27 @@ from pankus.helpers.pbar import Pbar
 from pankus.storages.stress import stress
 from pankus.defaults.config import \
     stress_key,start_key,end_key,junction_key,interlace_key
+from pankus.helpers.ram_collection import RamCollection
 
 
 def remove_stress_info():
 
-    pbar = Pbar('removing stressinfo: ',line_conn.count())
+    pbar = Pbar('removing stress info: ',line_conn.count())
     stress.delete_many({})
 
-    for edge in line_conn.find():
+    ram_line_conn=RamCollection(line_conn)
+
+    for edge in ram_line_conn.find():
         pbar.plus_one()
-        line_conn.update_one({
-            start_key: edge[start_key],
-            end_key: edge[end_key]
-        },{
-            "$unset": {
-                stress_key: "",
-                junction_key: "",
-                interlace_key: ""}
-        })
+        if stress_key in edge:
+            del(edge[stress_key])
+        if junction_key in edge:
+            del(edge[junction_key])
+        if interlace_key in edge:
+            del(edge[interlace_key])
+
+    line_conn.delete_many({})
+    line_conn.insert_many(ram_line_conn.find())
     pbar.finish()
 
 
