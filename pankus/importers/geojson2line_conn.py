@@ -3,15 +3,13 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 import json
-
-import ipdb
-
 from pankus.storages.line_conn import line_conn
 from pankus.storages.point import point
 from pankus.storages.crs import crs
 from pankus.defaults.config import \
     crs_key,point_key,id_key,start_key,end_key,linestring_key,weight_key,net_filename
 from pankus.helpers.pbar import Pbar
+import ipdb
 
 
 def import_lines():

@@ -4,7 +4,7 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.exporters.export_to_geojson import export
 
-def export_line_conn():
+def export_sd_point():
     export('sd_point')
 
 if __name__ == "__main__":
