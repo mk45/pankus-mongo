@@ -4,10 +4,9 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 import json
 from pankus.storages.line_conn import line_conn
-from pankus.storages.point import point
 from pankus.storages.crs import crs
 from pankus.defaults.config import \
-    crs_key,point_key,id_key,start_key,end_key,linestring_key,weight_key,net_filename
+    crs_key,start_key,end_key,linestring_key,weight_key,net_filename
 from pankus.helpers.pbar import Pbar
 import ipdb
 
@@ -22,30 +21,13 @@ def import_lines():
 
         pbar = Pbar('importing line:',len(geo_data['features']))
 
-        line_conn.delete_many({})
-        point_id = 0
-
+        new_line_conn=[]
         for feature in geo_data['features']:
             pbar.plus_one()
             assert feature['type'] == 'Feature'
             assert feature['geometry']['type'] == 'LineString'
 
             points = feature['geometry']['coordinates']
-            start = point.find_one({point_key: points[0]})
-            if not start:
-                point.insert_one({point_key: points[0], id_key: point_id})
-                start_id = point_id
-                point_id += 1
-            else:
-                start_id = start[id_key]
-
-            end = point.find_one({point_key: points[-1]})
-            if not end:
-                point.insert_one({point_key: points[-1], id_key: point_id})
-                end_id = point_id
-                point_id += 1
-            else:
-                end_id = end[id_key]
 
             # build record
             assert start_key not in feature['properties']
@@ -53,24 +35,24 @@ def import_lines():
             assert linestring_key not in feature['properties']
             assert weight_key in feature['properties']
             record = feature['properties']
-            record[start_key] = start_id
-            record[end_key] = end_id
+
             record[linestring_key] = points
-            r = line_conn.find_one({start_key: start_id, end_key: end_id})
-            if r:
-                print r
-                ipdb.set_trace()
-                if r[weight_key] < record[weight_key]:
-                    print r
-                    ipdb.set_trace()
-                    continue
-
-                print [points[0], points[-1]]
-
-                raise ValueError(
-                    "Can't have multiple connection between points")
-
-            line_conn.insert_one(record)
+            # r = line_conn.find_one({start_key: start_id, end_key: end_id})
+            # if r:
+            #     print r
+            #     ipdb.set_trace()
+            #     if r[weight_key] < record[weight_key]:
+            #         print r
+            #         ipdb.set_trace()
+            #         continue
+            #
+            #     print [points[0], points[-1]]
+            #
+            #     raise ValueError(
+            #         "Can't have multiple connection between points")
+            new_line_conn.append(record)
+        line_conn.delete_many({})
+        line_conn.insert_many(new_line_conn)
         pbar.finish()
 
 if __name__ == "__main__":

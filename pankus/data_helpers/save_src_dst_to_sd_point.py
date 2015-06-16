@@ -5,7 +5,9 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from pankus.helpers.pbar import Pbar
 from pankus.storages.sd_point import sd_point
 from pankus.storages.src_dst import src_dst
-from pankus.defaults.config import sd_id_key,sources_key,destinations_key
+from pankus.helpers.ram_collection import RamCollection
+from pankus.defaults.config import \
+    sd_id_key,sources_key,destinations_key
 import argparse
 
 

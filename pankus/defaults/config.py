@@ -60,7 +60,9 @@ to_ring_total_key="to_ring_total"
 in_ring_total_key="in_ring_total"
 
 # surplus weight for cut-offs
+
 sd_surplus=0
+blocking_weight=100000
 
 # dendryt pred succ
 successor_key='x'
@@ -69,6 +71,10 @@ predecessor_key='y'
 #path option
 path_key='path'
 delta_key='d'
+
+#vector repair constants
+warn_search_size = 1
+repair_size = 2**-6
 
 # collection names
 line_conn_name="line_conn"
