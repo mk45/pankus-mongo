@@ -8,16 +8,17 @@ from pankus.storages.dendryt import dendryt
 from pankus.helpers.pbar import Pbar
 from pankus.defaults.config import \
     start_key,end_key,id_key,weight_key,\
-    sd_start_key,sd_end_key,sd_id_key,ring_key
+    sd_start_key,sd_end_key,sd_id_key,\
+    ring_key,sd_surplus
 import argparse
 
 
 # weight delta in weight units
-def make_weight_rings(weight_delta):
+def make_weight_rings(weight_delta,center_in_ring_zero=False):
     """
     Makes rings
     :param weight_delta: Delta between rings. if weight in seconds this is also in seconds
-
+    :center_in_ring_zero: Only center in ring zero
     """
 
     assert weight_delta > 0
@@ -30,7 +31,14 @@ def make_weight_rings(weight_delta):
             weight = dendryt.find_one(
                 {start_key: start_point[id_key],
                  end_key: end_point[id_key]})[weight_key]
-            ring_number = int(weight / weight_delta)
+
+            if weight >0:
+                ring_number = int((weight-2*sd_surplus) / weight_delta)
+                if center_in_ring_zero:
+                    ring_number+=1
+            else:
+                ring_number = 0
+
             new_ring.append({
                 sd_start_key: start_point[sd_id_key],
                 sd_end_key: end_point[sd_id_key],
