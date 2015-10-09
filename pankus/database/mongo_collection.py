@@ -16,6 +16,7 @@ class MongoCollectionStorageFactory(object):
         self.indexes = indexes
         assert isinstance(indexes, list)
         for index in indexes:
+            assert isinstance(index, str)
             coll.create_index(index)
 
         self.find = coll.find
