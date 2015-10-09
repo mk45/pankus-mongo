@@ -7,14 +7,15 @@ from pankus.storages.sd_point import sd_point
 from pankus.storages.src_dst import src_dst
 from pankus.helpers.ram_collection import RamCollection
 from pankus.defaults.config import \
-    sd_id_key,sources_key,destinations_key
+    sd_id_key,sources_key,destinations_key,selectivity_key
 import argparse
 
 
-def save_src_dst_to_sd_point(src_name, dst_name):
+def save_src_dst_to_sd_point(src_name, dst_name, sel_name):
     """
     :param src_name: name for sources in sd_point collection
     :param dst_name: name for destinations in sd_point collection
+    :param sel_name: name for selectivity in sd_point collection
     :return:
 
     """
@@ -22,8 +23,9 @@ def save_src_dst_to_sd_point(src_name, dst_name):
     #type and length assertion
     assert src_name > ''
     assert dst_name > ''
+    assert sel_name > ''
 
-    pbar = Pbar('saving : ',src_dst.count())
+    pbar = Pbar('saving: ',src_dst.count())
     ram_sd_point=RamCollection(sd_point,[sd_id_key])
     for sd in src_dst.find():
         pbar.plus_one()
@@ -31,6 +33,8 @@ def save_src_dst_to_sd_point(src_name, dst_name):
         sd_p=ram_sd_point.find_one({sd_id_key: sd[sd_id_key]})
         sd_p[src_name]=sd[sources_key]
         sd_p[dst_name]=sd[destinations_key]
+        sd_p[sel_name]=sd[selectivity_key]
+
 
     sd_point.delete_many({})
     sd_point.insert_many(ram_sd_point.find())
