@@ -14,7 +14,7 @@ from pankus.storages.path import path
 from pankus.defaults.config import \
     start_key,end_key,sd_surplus,id_key,weight_key,path_key,\
     predecessor_key,delta_key,successor_key
-import argparse,ipdb
+import argparse
 
 
 def make_kpaths(k_paths):
