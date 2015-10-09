@@ -15,7 +15,7 @@ data:
     r - ring number  (indexed field)
     in_ring_total - total destinations in this ring
     to_ring_total - total destinations in previous rings
-
+    points_in_ring - all points number in this rings
 """
 
 ring_total = MongoCollectionStorageFactory(ring_total_name,[sd_id_key,ring_key])
