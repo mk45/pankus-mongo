@@ -8,7 +8,6 @@ from pankus.storages.crs import crs
 from pankus.defaults.config import \
     crs_key,start_key,end_key,linestring_key,weight_key,net_filename
 from pankus.helpers.pbar import Pbar
-import ipdb
 
 
 def import_lines():
