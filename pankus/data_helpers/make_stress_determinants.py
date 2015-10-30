@@ -6,9 +6,6 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from pankus.storages.line_conn import line_conn
 from pankus.storages.turn_info import turn_info
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import start_key,end_key,\
-    junction_determinant_key,interlace_determinant_key,\
-    ordered_interlace_info_key,ordered_junction_info_key
 from pankus.helpers.ram_collection import RamCollection
 
 def make_stress_determinants():

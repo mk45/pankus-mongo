@@ -8,9 +8,6 @@ from pankus.storages.point import point
 from pankus.storages.featured_point import featured_point
 from pankus.storages.connection import connection
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import \
-    start_key, weight_key, end_key, blocking_weight, id_key
-from pankus.defaults.config import sd_surplus
 from pankus.helpers.ram_collection import RamCollection
 
 def block_junctions(point_list):

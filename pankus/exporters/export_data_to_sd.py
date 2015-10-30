@@ -8,7 +8,7 @@ from pankus.helpers.pbar import Pbar
 import json
 
 
-def export(export_type, prop_list=None):
+def export_data_to_sd(export_type, prop_list=None):
     if export_type == "line_conn":
         geometry_name = "LineString"
         geometry_inner_name = linestring_key

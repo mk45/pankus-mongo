@@ -3,12 +3,12 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.database.mongo_collection import MongoCollectionStorageFactory
-
+from pankus.defaults.default_config import default_config
 """Storage for crs (coordinate reference system)
 
 data:
-    contains only one document
+    project config data : one data row
 
 """
 
-crs = MongoCollectionStorageFactory(crs_name,[])
+config = MongoCollectionStorageFactory(default_config['config_name'],[])

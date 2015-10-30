@@ -6,8 +6,6 @@ import cmath
 from pankus.helpers.pbar import Pbar
 from pankus.storages.line_conn import line_conn as line_conn
 from pankus.storages.turn_info import turn_info
-from pankus.defaults.config import \
-    start_key,end_key,linestring_key,ordered_predecessors_key,ordered_successors_key
 
 
 def make_junction_turn_info():

@@ -8,9 +8,6 @@ from pankus.storages.ring_total import ring_total
 from pankus.storages.src_dst import src_dst
 from pankus.helpers.pbar import Pbar
 from pankus.helpers.ram_collection import RamCollection
-from pankus.defaults.config import \
-    ring_key,sd_end_key,sd_start_key,sd_id_key,destinations_key,\
-    in_ring_total_key,to_ring_total_key,points_in_ring_key
 
 def make_rings_total():
     """

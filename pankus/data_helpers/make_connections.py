@@ -7,12 +7,8 @@ from pankus.storages.stress import stress
 from pankus.storages.connection import connection
 from pankus.stress.weight_increase_function import weight_increase_function
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import \
-    weight_key, stress_key, start_key, end_key, throughput_key, sd_surplus
-
 
 def make_connections():
-    connection.delete_many({})
     new_conn = []
     pbar = Pbar('make conn: ', line_conn.count())
     for edge in line_conn.find():
@@ -42,6 +38,7 @@ def make_connections():
                 end_key: edge[end_key],
                 weight_key: edge[weight_key]
             })
+    connection.delete_many({})
     connection.insert_many(new_conn)
     pbar.finish()
 

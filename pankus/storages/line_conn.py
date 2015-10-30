@@ -3,7 +3,7 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.database.mongo_collection import MongoCollectionStorageFactory
-from pankus.defaults.config import start_key,end_key,line_conn_name
+from pankus.defaults.get_config import get_config
 
 """Storage for line_conn
 
@@ -22,5 +22,6 @@ data:
 
 
 """
-
+line_conn_name=get_config('line_conn_name')
+start_key=get_config("")
 line_conn = MongoCollectionStorageFactory(line_conn_name,[start_key,end_key])

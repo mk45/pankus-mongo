@@ -8,10 +8,10 @@ from pankus.storages.dendryt import dendryt
 from pankus.storages.featured_point import featured_point
 from pankus.storages.point import point
 from pankus.storages.connection import connection
-from pankus.defaults.config import \
-    sd_surplus, id_key, start_key, end_key, weight_key, successor_key, predecessor_key
 from pankus.helpers.pbar import Pbar
 from pankus.helpers.ram_collection import RamCollection
+from pankus.backbone.backbone import backbone
+
 
 
 def make_dendryts():
@@ -22,7 +22,10 @@ def make_dendryts():
 
     # this line gives you speed
     conn = RamCollection(connection)
-    # conn=connection
+    conn=backbone.conn()
+
+    backbone.open_action('Generate dendryt: ','dendryt',)
+
 
     dendryt.delete_many({})
     N = point.count()

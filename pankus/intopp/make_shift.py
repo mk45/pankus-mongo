@@ -5,9 +5,6 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from pankus.storages.src_dst import src_dst
 from pankus.storages.motion_exchange import motion_exchange
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import \
-    sources_key, destinations_key,motion_quantity_key,\
-    sd_end_key,sd_id_key,selectivity_key
 
 
 def make_shift(shift_type):

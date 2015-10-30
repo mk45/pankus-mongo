@@ -3,7 +3,6 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.database.mongo_collection import MongoCollectionStorageFactory
-from pankus.defaults.config import id_key,point_name
 
 """Storage for point
 

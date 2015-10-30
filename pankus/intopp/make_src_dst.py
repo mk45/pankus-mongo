@@ -5,14 +5,13 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from pankus.storages.sd_point import sd_point
 from pankus.storages.src_dst import src_dst
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import \
-    sd_id_key,sources_key,destinations_key,selectivity_key
+
+
 import argparse
 
 
-def make_src_dst(selectivity=None):
+def make_src_dst(selectivity=None,src=sources_key,dst=destinations_key):
     """
-
     :param selectivity: selectivity in part per million
     makes selectivity or takes it from input data
     """
@@ -23,8 +22,8 @@ def make_src_dst(selectivity=None):
         if selectivity:
             new_src_dst.append({
                 sd_id_key: point[sd_id_key],
-                sources_key: point[sources_key],
-                destinations_key: point[destinations_key],
+                sources_key: point[src],
+                destinations_key: point[dst],
                 selectivity_key: selectivity
 
             })
@@ -32,8 +31,8 @@ def make_src_dst(selectivity=None):
             assert selectivity_key in point
             new_src_dst.append({
                 sd_id_key: point[sd_id_key],
-                sources_key: point[sources_key],
-                destinations_key: point[destinations_key],
+                sources_key: point[src],
+                destinations_key: point[dst],
                 selectivity_key: point[selectivity_key]
             })
     src_dst.delete_many({})

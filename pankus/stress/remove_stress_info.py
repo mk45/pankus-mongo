@@ -5,8 +5,6 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from pankus.storages.line_conn import line_conn as line_conn
 from pankus.helpers.pbar import Pbar
 from pankus.storages.stress import stress
-from pankus.defaults.config import \
-    stress_key,start_key,end_key,junction_key,interlace_key
 from pankus.helpers.ram_collection import RamCollection
 
 

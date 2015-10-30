@@ -5,12 +5,13 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 import json
 from pankus.storages.line_conn import line_conn
 from pankus.storages.crs import crs
-from pankus.defaults.config import \
-    crs_key,start_key,end_key,linestring_key,weight_key,net_filename
 from pankus.helpers.pbar import Pbar
+import pankus.defaults.config
 
 
 def import_lines():
+
+
     with open(net_filename+'.geojson') as f:
         geo_data = json.load(f)
         assert geo_data['type'] == 'FeatureCollection'

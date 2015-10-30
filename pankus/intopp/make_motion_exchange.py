@@ -9,9 +9,6 @@ from pankus.storages.src_dst import src_dst
 from pankus.storages.motion_exchange import motion_exchange
 from pankus.helpers.pbar import Pbar
 from pankus.helpers.ram_collection import RamCollection
-from pankus.defaults.config import \
-    sd_id_key,sd_start_key,sd_end_key,ring_key,to_ring_total_key,\
-    in_ring_total_key,selectivity_key,sources_key,destinations_key,motion_quantity_key
 import math
 
 

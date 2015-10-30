@@ -8,10 +8,6 @@ from pankus.storages.line_conn import line_conn
 from pankus.data_helpers.make_junction_turn_info import make_junction_turn_info
 from pankus.storages.turn_info import turn_info
 from pankus.storages.stress import stress
-from pankus.defaults.config import \
-    ordered_successors_key,ordered_predecessors_key,\
-    ordered_interlace_info_key,ordered_junction_info_key, \
-    stress_key, interlace_key, junction_key,start_key,end_key
 
 
 def save_stress_to_line_conn():

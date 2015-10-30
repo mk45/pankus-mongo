@@ -3,14 +3,13 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pymongo import MongoClient
-
-from pankus.defaults.config import default_database as db_name
-
+from pankus.defaults.default_config import default_config
 
 class MongoCollectionStorageFactory(object):
 
     def __init__(self, name, indexes):
-        coll = MongoClient()[db_name][name]
+        default_database=default_config['default_database']
+        coll = MongoClient()[default_database][name]
         self.coll = coll
         self.name = name
         self.indexes = indexes
@@ -24,12 +23,12 @@ class MongoCollectionStorageFactory(object):
         #self.drop = coll.drop
         self.delete_many = coll.delete_many
 
-        self.insert_one = coll.insert_one
+        #self.insert_one = coll.insert_one
         self.insert_many = coll.insert_many
         self.count = coll.count
 
-        self.update_one = coll.update_one
-        self.update_many = coll.update_many
+        #self.update_one = coll.update_one
+        #self.update_many = coll.update_many
 
     def finish(self):
         pass

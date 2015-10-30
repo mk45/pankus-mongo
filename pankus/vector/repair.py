@@ -5,8 +5,6 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from pankus.storages.line_conn import line_conn
 from pankus.storages.sd_point import sd_point
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import \
-    repair_size, id_key, linestring_key, point_key
 
 
 def repair():

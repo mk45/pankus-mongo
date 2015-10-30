@@ -8,9 +8,6 @@ from pankus.storages.stress_matrix import stress_matrix
 from pankus.storages.featured_point \
     import featured_point as featured_point
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import \
-    sd_id_key,id_key,sd_end_key,sd_start_key,\
-    motion_quantity_key,start_key,end_key
 
 
 def make_stress_matrix(fraction):

@@ -11,9 +11,6 @@ from pankus.storages.dendryt import dendryt
 from pankus.storages.featured_point import featured_point
 from pankus.storages.connection import connection
 from pankus.storages.path import path
-from pankus.defaults.config import \
-    start_key,end_key,sd_surplus,id_key,weight_key,path_key,\
-    predecessor_key,delta_key,successor_key
 import argparse
 
 

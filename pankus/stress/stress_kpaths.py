@@ -10,9 +10,6 @@ from pankus.helpers.start_cached_collection import StartCachedCollection
 from pankus.storages.featured_point import featured_point
 from pankus.storages.path import path
 from pankus.helpers.pbar import Pbar
-from pankus.defaults.config import \
-    id_key, start_key, end_key, motion_quantity_key, sd_start_key, \
-    sd_end_key, path_key, stress_key, junction_key, interlace_key
 
 
 def stress_kpaths(reverse=False):

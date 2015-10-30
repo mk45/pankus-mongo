@@ -6,8 +6,6 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 import json
 from pankus.storages.sd_point import sd_point
 from pankus.storages.crs import crs
-from pankus.defaults.config import \
-    sd_id_key,sources_key,destinations_key,point_key,sd_filename,crs_key
 from pankus.helpers.pbar import Pbar
 
 
@@ -17,9 +15,7 @@ def import_sd_points():
         assert geo_data['type'] == 'FeatureCollection'
         pbar = Pbar('importing sd: ',len(geo_data['features']))
         assert crs.count() == 0 or crs.find_one()[crs_key]==geo_data["crs"]
-
-        sd_point.delete_many({})
-
+        new_sd_point=[]
         for feature in geo_data['features']:
             pbar.plus_one()
             assert feature['type'] == 'Feature'
@@ -34,7 +30,10 @@ def import_sd_points():
             assert point_key not in feature['properties']
             record = feature['properties']
             record[point_key] = sd_p
-            sd_point.insert_one(record)
+            new_sd_point.append(record)
+
+        sd_point.delete_many({})
+        sd_point.insert_many(new_sd_point)
         pbar.finish()
 
 if __name__ == "__main__":
