@@ -6,54 +6,168 @@ from pankus.storage_class.databasecollection import DatabaseCollection
 
 
 
-class Elements(object):
-    def __init__(self,real_elements):
-        self.index=None
+
+class RamCache(object):
+    """
+    Simple Cache without index
+    """
+    def __init__(self,upper_object):
+        super(Index,self).__init__(upper_object)
+        self.collection=collection
+        self.inner_index=[]
+
+    def insert_one(self,element):
+        self.elements.append(element)
+
+    def insert_many(self,elements):
+        self.elements.extend(elements)
+
+    def find(self,search_dict):
+        if self.have_to_index:
+            self.elements=list(self.collection.find())
+            self.have_to_index=None
+
+        search_items=search_dict.items()
+        for element in self.elements:
+            if all([key in element and element[key]==value
+                    for key,value in search_items]):
+                    yield element
+
+    def find_one(self,search_dict):
+        result = self.find(search_dict)
+        return result.next()
+
+    def count(self):
+        return len(self.elements)
+
+    def delete_many(self,search_dict):
         self.elements=[]
 
-    def find(self,search_dict):
-        if search_dict=={}:
-            for
 
-class Multielement(Elements):
-    def __init__(self):
-        pass
-
-class Singleelement(Elements):
-    def __init__(self):
-        pass
-
-class StartIndexed(Elements):
+class StartIndexed(object):
     def __init__(self,field_name):
         self.field_name=field_name
-        self.current_element=None
+        self.current_value=None
+        self.inner_index=None
+        self.collection=None
+        self.fields_under=[]
+        self.elements=None
 
-    def elements_list(self,elements):
-    def find(self,search_dict):
+    def insert_one(self,element):
+        if self.field_name not in element:
+            raise ValueError("element must have indexed field")
+        if element[self.field_name]==self.current_value:
+            self.inner_index.insert_one(element)
+
+        else:
+
+            if self.fields_under==[]:
+                self.collection.insert_many(self.elements)
+
+            self.inner_index.delete_many({})
+            self.elements=[]
+            self.current_value=element[self.field_name]
+            self.inner_index.insert_one(element)
+
+        self.elements.append(element)
 
 
+    def delete_many(self,search_dict):
+        self.current_value=None
+        self.inner_index.delete_many(search_dict)
 
-class NumberIndex(Elements):
-    def __init__(self,field_name):
-        self.field_name=field_name
-        self.created=False
-        self.index=[]
-        self.index_inside=None
-
+    def insert_many(self,elements):
+        for element in elements:
+            assert self.field_name in element and element[self.field_name]==self.current_value
+            self.inner_index.insert_one(element)
 
     def find(self,search_dict):
         if self.field_name not in search_dict:
-            return []
-        else:
-            new_search=dict(search_dict)
-            del(new_search[self.field_name])
-            return self.index[search_dict[self.field_name]].find(new_search)
+            raise ValueError("element must have indexed field")
+        if search_dict[self.field_name]==self.current_value:
+            return self.inner_index.find(search_dict)
 
-    def insert(self,element):
-        if self.index_inside:
-            pass
+        self.inner_index.delete_many({})
+
+        # rebuild
+        tmp_filter=dict([(k,v) for k,v in sear  ch_dict.items() if k in self.fields_under+[k] ])
+        self.inner_index.insert_many(self.collection.find(tmp_filter))
+
+        self.current_value=search_dict[self.field_name]
+        self.inner_index.find(search_dict)
+
+    def find_one(self,search_dict):
+        result = self.find(search_dict)
+        return result.next()
+
+    def add_inner_index(self,index):
+        self.inner_index=index
+        self.inner_index.collection=self.collection
+        self.inner_index.fields_under=list(self.fields_under)
+        self.inner_index.fields_under.append(self.field_name)
+        self.elements=[]
+
+
+class NumberIndex(object):
+    def __init__(self,field_name):
+        self.field_name=field_name
+        self.inner_index=None
+        self.idx=[]
+        self.collection=None
+        self.fields_under=[]
+
+
+    def insert_one(self,element):
+        if self.field_name not in element:
+            raise ValueError("element must have indexed field")
+        while len()
+        if element[self.field_name]==self.current_value:
+            self.inner_index.insert_one(element)
+            # insert to lower instance insert_one(element)
         else:
-            pass
+
+            if self.fields_under==[]:
+                self.collection.
+
+            self.inner_index.delete_many({})
+            self.current_value=element[self.field_name]
+            self.inner_index.insert_one(element)
+
+    def delete_many(self,search_dict):
+        self.current_value=None
+        self.inner_index.delete_many(search_dict)
+
+    def insert_many(self,elements):
+        for element in elements:
+            assert self.field_name in element and element[self.field_name]==self.current_value
+            self.inner_index.insert_one(element)
+
+    def find(self,search_dict):
+        if self.field_name not in search_dict:
+            raise ValueError("element must have indexed field")
+        if search_dict[self.field_name]==self.current_value:
+            return self.inner_index.find(search_dict)
+
+        self.inner_index.delete_many({})
+
+        # rebuild
+        tmp_filter=dict([(k,v) for k,v in sear  ch_dict.items() if k in self.fields_under+[k] ])
+        self.inner_index.insert_many(self.collection.find(tmp_filter))
+
+        self.current_value=search_dict[self.field_name]
+        self.inner_index.find(search_dict)
+
+    def find_one(self,search_dict):
+        result = self.find(search_dict)
+        return result.next()
+
+    def add_inner_index(self,index):
+        def inner_index_maker():
+
+            self.inner_index=index
+            self.inner_index.collection=self.collection
+        self.inner_index.fields_under=list(self.fields_under)
+        self.inner_index.fields_under.append(self.field_name)
 
     def create(self,search_dict,collection):
         if self.created:
@@ -64,7 +178,7 @@ class NumberIndex(Elements):
     def insert_element(self,element):
         pass
 
-class DictIndex(Elements):
+class DictIndex(Index):
     def __init__(self,field_name):
         self.field_name=field_name
 
@@ -81,57 +195,50 @@ class DictIndex(Elements):
         pass
 
 
-class Storage(DatabaseCollection):
 
-    def __init__(self,name):
-        super(Storage,self).__init__(name)
-        self.fields={}
-        # initial estiation of element size
-        #self.elements_count=elements_count
-        self.collection=super(Storage,self)
-        self.index=None
-        self.dirty=None
-        self.caching_enabled=False
-        #index
+class Storage(object):
 
-        #self.index=None
+    def __init__(self,name,index_list):
 
-            # set idxs
-        # get config about caching
-        if True:
+        self.collection=Config()['default_database'][name]
+        self.cache_enabled=Config()['cache_enabled']
+        self.idx=None
 
-            pass
-        else:
-
-            # use slow but reliable method through database
-            # find_one , find , insert_many , insert_one are inherited
+        self.elements=[]
 
 
-    def add_field(self,name,type):
-        self.fields[name]=type
 
-        super(Storage,self).add_field(name,type)
+        for index in index_list:
+        self.collection.create_index(index.field_name)
+            if self.cache_enabled:
+                if self.idx:
+                    self.idx.add_inner_index(index)
+                else
+                    self.idx=index
+                    self.idx.collection=self.collection
 
-    def add_index(self,index_object):
-        if isinstance(index_object,str):
-            self.caching_enabled=False
-            super(Storage,self).add_index(index_object)
-        else:
-            assert isinstance(index_object,StartIndexed) or\
-                    isinstance(index_object,NumberIndex) or\
-                    isinstance(index_object,DictIndex)
-            super(Storage,self).add_index(index_object.field_name)
+        self.find=self.collection.find
+        self.find_one=self.collection.find_one
+        self.insert_one=self.collection.insert_one
+        self.insert_many=self.collection.insert_many
+        self.delete_many=self.collection.delete_many
+        self.count=self.collection.count
 
-            if not self.index:
-                self.index=index_object
-            else:
-                self.index.inner_index(index_object)
+        # Create basic index
+        if self.cache_enabled:
+            self.find=self.idx.find
+            self.find_one=self.idx.find_one
+            self.insert_one=self.idx.insert_one
+            self.insert_many=self.idx.insert_many
+
+            self.count=self.idx.count
+            slef.
 
     def commit(self):
-        self.index.commit()
+        self.idx.commit()
 
-    def can_caching_be_used(self):
-        return self.caching_enabled
+    def to_ram(self):
+
 
     def find(self,search_dict):
         if self.can_caching_be_used():
@@ -145,5 +252,3 @@ class Storage(DatabaseCollection):
 
     def delete_many(self,search_dict):
         return self.index.delete_many(search_dict)
-
-    def insert_

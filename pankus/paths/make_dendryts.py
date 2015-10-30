@@ -10,9 +10,18 @@ from pankus.storages.point import point
 from pankus.storages.connection import connection
 from pankus.helpers.pbar import Pbar
 from pankus.helpers.ram_collection import RamCollection
-from pankus.backbone.backbone import backbone
+from pankus.backbone.backbone import Backbone
 
 
+class ShortestPath(Backbone):
+
+    """
+
+    """
+    def __init__(self):
+        super(ShortestPath,self).__init__('Generate shortest paths','shortest_path')
+
+    
 
 def make_dendryts():
     """

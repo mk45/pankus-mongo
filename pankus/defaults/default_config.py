@@ -88,7 +88,7 @@ default_config={
 'line_conn':"line_conn",
 'connection':"connection",
 'crs':"crs",
-'dendryt':"dendryt",
+'shortest_path':"shortest_path",
 'featured_point':"featured_point",
 'point':"point",
 'sd_point':"sd_point",
