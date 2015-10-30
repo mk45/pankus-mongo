@@ -56,6 +56,7 @@ selectivity_key='sel'
 
 #ring
 ring_key='r'
+points_in_ring_key='points_in_ring'
 to_ring_total_key="to_ring_total"
 in_ring_total_key="in_ring_total"
 

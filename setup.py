@@ -17,10 +17,12 @@ setup(
         'pankus.helpers',
         'pankus.data_helpers',
         'pankus.stress',
+        #'pankus.analysis_tools'
     ],
     requires=[
         'progressbar2',
         'pymongo',
+        'psutil'
     ],
     url='http://github.com/mk45/pankus',
     license='(c) Politechnika Wroclawska',
