@@ -12,6 +12,7 @@ from pankus.data_helpers.make_junction_turn_info import make_junction_turn_info
 from pankus.data_helpers.save_src_dst_to_sd_point import save_src_dst_to_sd_point
 from pankus.data_helpers.save_stress_to_line_conn import save_stress_to_line_conn
 from pankus.data_helpers.make_points import make_points
+from pankus.vector.repair import repair
 from pankus.intopp.make_src_dst import make_src_dst
 from pankus.intopp.make_weight_rings import make_weight_rings
 from pankus.intopp.make_rings_total import make_rings_total
@@ -33,6 +34,7 @@ from pankus.exporters.export_sd_point import export_sd_point
 #import from files
 import_lines()
 import_sd_points()
+repair()
 make_points()
 make_featured_points()
 make_connections()
@@ -49,7 +51,11 @@ make_junction_turn_info()
 remove_stress_info()
 make_kpaths(3)
 stress_kpaths()
-#make_connections()
+make_connections()
+make_dendryts()
+make_kpaths(3)
+stress_kpaths()
+
 save_stress_to_line_conn()
 make_stress_determinants()
 #remove_stress_info()
