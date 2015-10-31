@@ -17,6 +17,7 @@ setup(
         'pankus.helpers',
         'pankus.data_helpers',
         'pankus.stress',
+        'pankus.vector',
         #'pankus.analysis_tools'
     ],
     requires=[
