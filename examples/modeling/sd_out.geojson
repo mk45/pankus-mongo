@@ -1,0 +1,2611 @@
+{
+    "type": "FeatureCollection", 
+    "crs": {
+        "type": "name", 
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::2177"
+        }
+    }, 
+    "features": [
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6499092.375, 
+                    5604220.421875
+                ]
+            }, 
+            "properties": {
+                "ID": 1476, 
+                "sd_id": 98, 
+                "NAZWA": "Przywory", 
+                "LUDNOSC": 1158.0, 
+                "src": 579.0, 
+                "dst": 579.0, 
+                "src1": 579.0, 
+                "dst1": 221.216729
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496904.171875, 
+                    5615547.359375
+                ]
+            }, 
+            "properties": {
+                "ID": 1011, 
+                "sd_id": 79, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 5401.0, 
+                "src": 2700.5, 
+                "dst": 2700.5, 
+                "src1": 2700.5, 
+                "dst1": 3425.987226
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494995.46875, 
+                    5614866.453125
+                ]
+            }, 
+            "properties": {
+                "ID": 697, 
+                "sd_id": 53, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 555.0, 
+                "src": 277.5, 
+                "dst": 277.5, 
+                "src1": 277.5, 
+                "dst1": 418.154625
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6487728.890625, 
+                    5614568.609375
+                ]
+            }, 
+            "properties": {
+                "ID": 16, 
+                "sd_id": 3, 
+                "NAZWA": "Mechnice", 
+                "LUDNOSC": 1055.0, 
+                "src": 527.5, 
+                "dst": 527.5, 
+                "src1": 527.5, 
+                "dst1": 244.523156
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496833.640625, 
+                    5613449.53125
+                ]
+            }, 
+            "properties": {
+                "ID": 987, 
+                "sd_id": 78, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 508.0, 
+                "src": 254.0, 
+                "dst": 254.0, 
+                "src1": 254.0, 
+                "dst1": 303.906004
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493358.890625, 
+                    5611139.140625
+                ]
+            }, 
+            "properties": {
+                "ID": 367, 
+                "sd_id": 28, 
+                "NAZWA": "Win\u00f3w", 
+                "LUDNOSC": 656.0, 
+                "src": 328.0, 
+                "dst": 328.0, 
+                "src1": 328.0, 
+                "dst1": 255.072441
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6502122.828125, 
+                    5602571.609375
+                ]
+            }, 
+            "properties": {
+                "ID": 1597, 
+                "sd_id": 102, 
+                "NAZWA": "Miedziana", 
+                "LUDNOSC": 640.0, 
+                "src": 320.0, 
+                "dst": 320.0, 
+                "src1": 320.0, 
+                "dst1": 98.126626
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494941.171875, 
+                    5615349.78125
+                ]
+            }, 
+            "properties": {
+                "ID": 695, 
+                "sd_id": 52, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1201.0, 
+                "src": 600.5, 
+                "dst": 600.5, 
+                "src1": 600.5, 
+                "dst1": 943.165688
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6492947.34375, 
+                    5613365.453125
+                ]
+            }, 
+            "properties": {
+                "ID": 254, 
+                "sd_id": 22, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2160.0, 
+                "src": 1080.0, 
+                "dst": 1080.0, 
+                "src1": 1080.0, 
+                "dst1": 1216.124647
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6490475.96875, 
+                    5612562.921875
+                ]
+            }, 
+            "properties": {
+                "ID": 70, 
+                "sd_id": 13, 
+                "NAZWA": "Chmielowice", 
+                "LUDNOSC": 1610.0, 
+                "src": 805.0, 
+                "dst": 805.0, 
+                "src1": 805.0, 
+                "dst1": 518.554338
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6505911.609375, 
+                    5604369.78125
+                ]
+            }, 
+            "properties": {
+                "ID": 1623, 
+                "sd_id": 107, 
+                "NAZWA": "Tarn\u00f3w Opolski", 
+                "LUDNOSC": 3759.0, 
+                "src": 1879.5, 
+                "dst": 1879.5, 
+                "src1": 1879.5, 
+                "dst1": 629.385104
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494301.8125, 
+                    5614450.9375
+                ]
+            }, 
+            "properties": {
+                "ID": 543, 
+                "sd_id": 38, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 364.0, 
+                "src": 182.0, 
+                "dst": 182.0, 
+                "src1": 182.0, 
+                "dst1": 236.105039
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493719.140625, 
+                    5614836.09375
+                ]
+            }, 
+            "properties": {
+                "ID": 439, 
+                "sd_id": 33, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1630.0, 
+                "src": 815.0, 
+                "dst": 815.0, 
+                "src1": 815.0, 
+                "dst1": 1174.864152
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495372.875, 
+                    5614464.421875
+                ]
+            }, 
+            "properties": {
+                "ID": 1669, 
+                "sd_id": 123, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 404.0, 
+                "src": 202.0, 
+                "dst": 202.0, 
+                "src1": 202.0, 
+                "dst1": 288.336726
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6506712.84375, 
+                    5611456.25
+                ]
+            }, 
+            "properties": {
+                "ID": 1635, 
+                "sd_id": 111, 
+                "NAZWA": "D\u0119bie", 
+                "LUDNOSC": 493.0, 
+                "src": 246.5, 
+                "dst": 246.5, 
+                "src1": 246.5, 
+                "dst1": 84.975092
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495862.078125, 
+                    5612201.015625
+                ]
+            }, 
+            "properties": {
+                "ID": 1666, 
+                "sd_id": 120, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 267.0, 
+                "src": 133.5, 
+                "dst": 133.5, 
+                "src1": 133.5, 
+                "dst1": 98.420426
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6506021.953125, 
+                    5609438.765625
+                ]
+            }, 
+            "properties": {
+                "ID": 1641, 
+                "sd_id": 112, 
+                "NAZWA": "D\u0105browice", 
+                "LUDNOSC": 223.0, 
+                "src": 111.5, 
+                "dst": 111.5, 
+                "src1": 111.5, 
+                "dst1": 39.567245
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495035.59375, 
+                    5608321.984375
+                ]
+            }, 
+            "properties": {
+                "ID": 620, 
+                "sd_id": 45, 
+                "NAZWA": "Chrzowice", 
+                "LUDNOSC": 121.0, 
+                "src": 60.5, 
+                "dst": 60.5, 
+                "src1": 60.5, 
+                "dst1": 26.909426
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494483.359375, 
+                    5614885.28125
+                ]
+            }, 
+            "properties": {
+                "ID": 566, 
+                "sd_id": 41, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1115.0, 
+                "src": 557.5, 
+                "dst": 557.5, 
+                "src1": 557.5, 
+                "dst1": 873.14047
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495759.953125, 
+                    5614089.46875
+                ]
+            }, 
+            "properties": {
+                "ID": 1675, 
+                "sd_id": 129, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2502.0, 
+                "src": 1251.0, 
+                "dst": 1251.0, 
+                "src1": 1251.0, 
+                "dst1": 1572.915331
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497989.078125, 
+                    5608046.390625
+                ]
+            }, 
+            "properties": {
+                "ID": 1244, 
+                "sd_id": 91, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2482.0, 
+                "src": 1241.0, 
+                "dst": 1241.0, 
+                "src1": 1241.0, 
+                "dst1": 528.945797
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495184.0625, 
+                    5614473.234375
+                ]
+            }, 
+            "properties": {
+                "ID": 759, 
+                "sd_id": 61, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 699.0, 
+                "src": 349.5, 
+                "dst": 349.5, 
+                "src1": 349.5, 
+                "dst1": 482.824811
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495011.625, 
+                    5615856.9375
+                ]
+            }, 
+            "properties": {
+                "ID": 701, 
+                "sd_id": 54, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1922.0, 
+                "src": 961.0, 
+                "dst": 961.0, 
+                "src1": 961.0, 
+                "dst1": 1255.695268
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497471.375, 
+                    5615230.484375
+                ]
+            }, 
+            "properties": {
+                "ID": 1144, 
+                "sd_id": 86, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1339.0, 
+                "src": 669.5, 
+                "dst": 669.5, 
+                "src1": 669.5, 
+                "dst1": 974.298074
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6499538.109375, 
+                    5619798.9375
+                ]
+            }, 
+            "properties": {
+                "ID": 1052, 
+                "sd_id": 82, 
+                "NAZWA": "Zawada", 
+                "LUDNOSC": 1438.0, 
+                "src": 719.0, 
+                "dst": 719.0, 
+                "src1": 719.0, 
+                "dst1": 377.056021
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495373.71875, 
+                    5614090.328125
+                ]
+            }, 
+            "properties": {
+                "ID": 1674, 
+                "sd_id": 128, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1553.0, 
+                "src": 776.5, 
+                "dst": 776.5, 
+                "src1": 776.5, 
+                "dst1": 1007.027219
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496020.765625, 
+                    5614384.84375
+                ]
+            }, 
+            "properties": {
+                "ID": 868, 
+                "sd_id": 69, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1093.0, 
+                "src": 546.5, 
+                "dst": 546.5, 
+                "src1": 546.5, 
+                "dst1": 799.02218
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493671.078125, 
+                    5617182.0625
+                ]
+            }, 
+            "properties": {
+                "ID": 436, 
+                "sd_id": 32, 
+                "NAZWA": null, 
+                "LUDNOSC": 1525.0, 
+                "src": 762.5, 
+                "dst": 762.5, 
+                "src1": 762.5, 
+                "dst1": 738.354113
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495982.578125, 
+                    5603647.21875
+                ]
+            }, 
+            "properties": {
+                "ID": 751, 
+                "sd_id": 59, 
+                "NAZWA": "Zimnice Ma\u0142e", 
+                "LUDNOSC": 497.0, 
+                "src": 248.5, 
+                "dst": 248.5, 
+                "src1": 248.5, 
+                "dst1": 71.486223
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6503148.046875, 
+                    5603883.546875
+                ]
+            }, 
+            "properties": {
+                "ID": 1613, 
+                "sd_id": 105, 
+                "NAZWA": "Kosorowice", 
+                "LUDNOSC": 988.0, 
+                "src": 494.0, 
+                "dst": 494.0, 
+                "src1": 494.0, 
+                "dst1": 149.447547
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6492400.84375, 
+                    5607079.34375
+                ]
+            }, 
+            "properties": {
+                "ID": 210, 
+                "sd_id": 20, 
+                "NAZWA": "Z\u0142otniki", 
+                "LUDNOSC": 494.0, 
+                "src": 247.0, 
+                "dst": 247.0, 
+                "src1": 247.0, 
+                "dst1": 112.356528
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6504907.828125, 
+                    5614292.921875
+                ]
+            }, 
+            "properties": {
+                "ID": 1631, 
+                "sd_id": 110, 
+                "NAZWA": "Chrz\u0105stowice", 
+                "LUDNOSC": 1281.0, 
+                "src": 640.5, 
+                "dst": 640.5, 
+                "src1": 640.5, 
+                "dst1": 221.07971
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493140.703125, 
+                    5614881.15625
+                ]
+            }, 
+            "properties": {
+                "ID": 338, 
+                "sd_id": 27, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 3695.0, 
+                "src": 1847.5, 
+                "dst": 1847.5, 
+                "src1": 1847.5, 
+                "dst1": 2141.100674
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496874.3125, 
+                    5616453.921875
+                ]
+            }, 
+            "properties": {
+                "ID": 927, 
+                "sd_id": 73, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 906.0, 
+                "src": 453.0, 
+                "dst": 453.0, 
+                "src1": 453.0, 
+                "dst1": 565.382045
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6499013.453125, 
+                    5612667.8125
+                ]
+            }, 
+            "properties": {
+                "ID": 1505, 
+                "sd_id": 100, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2112.0, 
+                "src": 1056.0, 
+                "dst": 1056.0, 
+                "src1": 1056.0, 
+                "dst1": 804.090385
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6492844.5625, 
+                    5610076.4375
+                ]
+            }, 
+            "properties": {
+                "ID": 240, 
+                "sd_id": 21, 
+                "NAZWA": "G\u00f3rki", 
+                "LUDNOSC": 683.0, 
+                "src": 341.5, 
+                "dst": 341.5, 
+                "src1": 341.5, 
+                "dst1": 200.659082
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6492545.1875, 
+                    5608526.265625
+                ]
+            }, 
+            "properties": {
+                "ID": 204, 
+                "sd_id": 19, 
+                "NAZWA": "Chrz\u0105szczyce", 
+                "LUDNOSC": 548.0, 
+                "src": 274.0, 
+                "dst": 274.0, 
+                "src1": 274.0, 
+                "dst1": 145.430269
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495243.296875, 
+                    5616253.75
+                ]
+            }, 
+            "properties": {
+                "ID": 746, 
+                "sd_id": 58, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 3187.0, 
+                "src": 1593.5, 
+                "dst": 1593.5, 
+                "src1": 1593.5, 
+                "dst1": 2219.982116
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494422.515625, 
+                    5613926.6875
+                ]
+            }, 
+            "properties": {
+                "ID": 555, 
+                "sd_id": 39, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 618.0, 
+                "src": 309.0, 
+                "dst": 309.0, 
+                "src1": 309.0, 
+                "dst1": 381.124207
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496784.34375, 
+                    5616081.34375
+                ]
+            }, 
+            "properties": {
+                "ID": 979, 
+                "sd_id": 77, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2083.0, 
+                "src": 1041.5, 
+                "dst": 1041.5, 
+                "src1": 1041.5, 
+                "dst1": 1100.356725
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494962.625, 
+                    5614338.390625
+                ]
+            }, 
+            "properties": {
+                "ID": 689, 
+                "sd_id": 51, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 517.0, 
+                "src": 258.5, 
+                "dst": 258.5, 
+                "src1": 258.5, 
+                "dst1": 366.067119
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496235.953125, 
+                    5614282.890625
+                ]
+            }, 
+            "properties": {
+                "ID": 885, 
+                "sd_id": 70, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1643.0, 
+                "src": 821.5, 
+                "dst": 821.5, 
+                "src1": 821.5, 
+                "dst1": 1256.622574
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494754.859375, 
+                    5615639.171875
+                ]
+            }, 
+            "properties": {
+                "ID": 631, 
+                "sd_id": 46, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1563.0, 
+                "src": 781.5, 
+                "dst": 781.5, 
+                "src1": 781.5, 
+                "dst1": 1155.962882
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6502076.828125, 
+                    5614948.421875
+                ]
+            }, 
+            "properties": {
+                "ID": 1610, 
+                "sd_id": 104, 
+                "NAZWA": "L\u0119dziny", 
+                "LUDNOSC": 478.0, 
+                "src": 239.0, 
+                "dst": 239.0, 
+                "src1": 239.0, 
+                "dst1": 136.238492
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493015.375, 
+                    5613713.390625
+                ]
+            }, 
+            "properties": {
+                "ID": 1672, 
+                "sd_id": 126, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 251.0, 
+                "src": 125.5, 
+                "dst": 125.5, 
+                "src1": 125.5, 
+                "dst1": 143.616001
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494197.75, 
+                    5614221.53125
+                ]
+            }, 
+            "properties": {
+                "ID": 506, 
+                "sd_id": 36, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 788.0, 
+                "src": 394.0, 
+                "dst": 394.0, 
+                "src1": 394.0, 
+                "dst1": 487.168346
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6502805.1875, 
+                    5613146.78125
+                ]
+            }, 
+            "properties": {
+                "ID": 1614, 
+                "sd_id": 106, 
+                "NAZWA": "Suchy B\u00f3r", 
+                "LUDNOSC": 893.0, 
+                "src": 446.5, 
+                "dst": 446.5, 
+                "src1": 446.5, 
+                "dst1": 216.314005
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6498429.859375, 
+                    5602660.40625
+                ]
+            }, 
+            "properties": {
+                "ID": 1312, 
+                "sd_id": 94, 
+                "NAZWA": "K\u0105ty Opolskie", 
+                "LUDNOSC": 920.0, 
+                "src": 460.0, 
+                "dst": 460.0, 
+                "src1": 460.0, 
+                "dst1": 144.768126
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493060.828125, 
+                    5614163.953125
+                ]
+            }, 
+            "properties": {
+                "ID": 301, 
+                "sd_id": 26, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2071.0, 
+                "src": 1035.5, 
+                "dst": 1035.5, 
+                "src1": 1035.5, 
+                "dst1": 1345.587479
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495759.21875, 
+                    5614325.46875
+                ]
+            }, 
+            "properties": {
+                "ID": 1673, 
+                "sd_id": 127, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1790.0, 
+                "src": 895.0, 
+                "dst": 895.0, 
+                "src1": 895.0, 
+                "dst1": 1147.488526
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6498655.390625, 
+                    5611822.53125
+                ]
+            }, 
+            "properties": {
+                "ID": 1402, 
+                "sd_id": 96, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 855.0, 
+                "src": 427.5, 
+                "dst": 427.5, 
+                "src1": 427.5, 
+                "dst1": 265.636375
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6490211.3125, 
+                    5611344.296875
+                ]
+            }, 
+            "properties": {
+                "ID": 48, 
+                "sd_id": 9, 
+                "NAZWA": "Dzieka\u0144stwo", 
+                "LUDNOSC": 242.0, 
+                "src": 121.0, 
+                "dst": 121.0, 
+                "src1": 121.0, 
+                "dst1": 66.099995
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495129.34375, 
+                    5605613.40625
+                ]
+            }, 
+            "properties": {
+                "ID": 736, 
+                "sd_id": 57, 
+                "NAZWA": "\u0179linice", 
+                "LUDNOSC": 685.0, 
+                "src": 342.5, 
+                "dst": 342.5, 
+                "src1": 342.5, 
+                "dst1": 108.816977
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497067.109375, 
+                    5613679.65625
+                ]
+            }, 
+            "properties": {
+                "ID": 1033, 
+                "sd_id": 81, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 454.0, 
+                "src": 227.0, 
+                "dst": 227.0, 
+                "src1": 227.0, 
+                "dst1": 243.641034
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494741.625, 
+                    5619346.609375
+                ]
+            }, 
+            "properties": {
+                "ID": 615, 
+                "sd_id": 43, 
+                "NAZWA": "Krzanowice", 
+                "LUDNOSC": 401.0, 
+                "src": 200.5, 
+                "dst": 200.5, 
+                "src1": 200.5, 
+                "dst1": 147.913139
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493621.1875, 
+                    5612320.265625
+                ]
+            }, 
+            "properties": {
+                "ID": 1665, 
+                "sd_id": 119, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 265.0, 
+                "src": 132.5, 
+                "dst": 132.5, 
+                "src1": 132.5, 
+                "dst1": 115.726734
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496366.09375, 
+                    5617309.640625
+                ]
+            }, 
+            "properties": {
+                "ID": 805, 
+                "sd_id": 64, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 531.0, 
+                "src": 265.5, 
+                "dst": 265.5, 
+                "src1": 265.5, 
+                "dst1": 325.068103
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6504483.75, 
+                    5610034.53125
+                ]
+            }, 
+            "properties": {
+                "ID": 1624, 
+                "sd_id": 108, 
+                "NAZWA": "Falmirowice", 
+                "LUDNOSC": 414.0, 
+                "src": 207.0, 
+                "dst": 207.0, 
+                "src1": 207.0, 
+                "dst1": 102.274587
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6498317.484375, 
+                    5614581.203125
+                ]
+            }, 
+            "properties": {
+                "ID": 1290, 
+                "sd_id": 93, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 541.0, 
+                "src": 270.5, 
+                "dst": 270.5, 
+                "src1": 270.5, 
+                "dst1": 279.223319
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494649.78125, 
+                    5614327.234375
+                ]
+            }, 
+            "properties": {
+                "ID": 1667, 
+                "sd_id": 121, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 397.0, 
+                "src": 198.5, 
+                "dst": 198.5, 
+                "src1": 198.5, 
+                "dst1": 272.68418
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495970.859375, 
+                    5619715.921875
+                ]
+            }, 
+            "properties": {
+                "ID": 832, 
+                "sd_id": 67, 
+                "NAZWA": "K\u0119pa", 
+                "LUDNOSC": 917.0, 
+                "src": 458.5, 
+                "dst": 458.5, 
+                "src1": 458.5, 
+                "dst1": 307.740543
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495060.4375, 
+                    5613647.796875
+                ]
+            }, 
+            "properties": {
+                "ID": 712, 
+                "sd_id": 55, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 462.0, 
+                "src": 231.0, 
+                "dst": 231.0, 
+                "src1": 231.0, 
+                "dst1": 294.327851
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6489555.015625, 
+                    5615672.546875
+                ]
+            }, 
+            "properties": {
+                "ID": 28, 
+                "sd_id": 7, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 112.0, 
+                "src": 56.0, 
+                "dst": 56.0, 
+                "src1": 56.0, 
+                "dst1": 27.302153
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497058.0625, 
+                    5621488.28125
+                ]
+            }, 
+            "properties": {
+                "ID": 389, 
+                "sd_id": 30, 
+                "NAZWA": "Luboszyce", 
+                "LUDNOSC": 1118.0, 
+                "src": 559.0, 
+                "dst": 559.0, 
+                "src1": 559.0, 
+                "dst1": 223.269228
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495678.234375, 
+                    5614875.28125
+                ]
+            }, 
+            "properties": {
+                "ID": 1659, 
+                "sd_id": 113, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2080.0, 
+                "src": 1040.0, 
+                "dst": 1040.0, 
+                "src1": 1040.0, 
+                "dst1": 1601.921386
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6492947.859375, 
+                    5621092.875
+                ]
+            }, 
+            "properties": {
+                "ID": 266, 
+                "sd_id": 24, 
+                "NAZWA": "Czarnow\u0105sy", 
+                "LUDNOSC": 3198.0, 
+                "src": 1599.0, 
+                "dst": 1599.0, 
+                "src1": 1599.0, 
+                "dst1": 737.913389
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6489894.609375, 
+                    5613648.53125
+                ]
+            }, 
+            "properties": {
+                "ID": 22, 
+                "sd_id": 5, 
+                "NAZWA": "\u017berkowice", 
+                "LUDNOSC": 313.0, 
+                "src": 156.5, 
+                "dst": 156.5, 
+                "src1": 156.5, 
+                "dst1": 93.921791
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495842.96875, 
+                    5616086.46875
+                ]
+            }, 
+            "properties": {
+                "ID": 807, 
+                "sd_id": 65, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1951.0, 
+                "src": 975.5, 
+                "dst": 975.5, 
+                "src1": 975.5, 
+                "dst1": 1350.232263
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497581.09375, 
+                    5608990.921875
+                ]
+            }, 
+            "properties": {
+                "ID": 1173, 
+                "sd_id": 87, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 742.0, 
+                "src": 371.0, 
+                "dst": 371.0, 
+                "src1": 371.0, 
+                "dst1": 166.0512
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496348.65625, 
+                    5614616.609375
+                ]
+            }, 
+            "properties": {
+                "ID": 1671, 
+                "sd_id": 125, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1618.0, 
+                "src": 809.0, 
+                "dst": 809.0, 
+                "src1": 809.0, 
+                "dst1": 1274.645981
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496636.140625, 
+                    5615302.8125
+                ]
+            }, 
+            "properties": {
+                "ID": 929, 
+                "sd_id": 74, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1512.0, 
+                "src": 756.0, 
+                "dst": 756.0, 
+                "src1": 756.0, 
+                "dst1": 1159.139178
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6499046.28125, 
+                    5614301.828125
+                ]
+            }, 
+            "properties": {
+                "ID": 1503, 
+                "sd_id": 99, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1110.0, 
+                "src": 555.0, 
+                "dst": 555.0, 
+                "src1": 555.0, 
+                "dst1": 545.878058
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6492221.53125, 
+                    5614257.796875
+                ]
+            }, 
+            "properties": {
+                "ID": 1664, 
+                "sd_id": 118, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 4888.0, 
+                "src": 2444.0, 
+                "dst": 2444.0, 
+                "src1": 2444.0, 
+                "dst1": 2491.12373
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494551.75, 
+                    5615248.328125
+                ]
+            }, 
+            "properties": {
+                "ID": 573, 
+                "sd_id": 42, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1393.0, 
+                "src": 696.5, 
+                "dst": 696.5, 
+                "src1": 696.5, 
+                "dst1": 1086.008741
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497675.234375, 
+                    5614637.828125
+                ]
+            }, 
+            "properties": {
+                "ID": 1187, 
+                "sd_id": 88, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 146.0, 
+                "src": 73.0, 
+                "dst": 73.0, 
+                "src1": 73.0, 
+                "dst1": 91.92267
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497495.015625, 
+                    5612494.796875
+                ]
+            }, 
+            "properties": {
+                "ID": 1100, 
+                "sd_id": 85, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 124.0, 
+                "src": 62.0, 
+                "dst": 62.0, 
+                "src1": 62.0, 
+                "dst1": 46.558768
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494849.15625, 
+                    5614770.609375
+                ]
+            }, 
+            "properties": {
+                "ID": 1661, 
+                "sd_id": 115, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 263.0, 
+                "src": 131.5, 
+                "dst": 131.5, 
+                "src1": 131.5, 
+                "dst1": 210.011548
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494900.21875, 
+                    5614595.453125
+                ]
+            }, 
+            "properties": {
+                "ID": 668, 
+                "sd_id": 47, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 181.0, 
+                "src": 90.5, 
+                "dst": 90.5, 
+                "src1": 90.5, 
+                "dst1": 133.062507
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494977.390625, 
+                    5614988.40625
+                ]
+            }, 
+            "properties": {
+                "ID": 687, 
+                "sd_id": 50, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 686.0, 
+                "src": 343.0, 
+                "dst": 343.0, 
+                "src1": 343.0, 
+                "dst1": 522.911823
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497902.046875, 
+                    5609892.890625
+                ]
+            }, 
+            "properties": {
+                "ID": 1204, 
+                "sd_id": 89, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 425.0, 
+                "src": 212.5, 
+                "dst": 212.5, 
+                "src1": 212.5, 
+                "dst1": 113.364141
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497928.09375, 
+                    5615220.203125
+                ]
+            }, 
+            "properties": {
+                "ID": 1241, 
+                "sd_id": 90, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 4738.0, 
+                "src": 2369.0, 
+                "dst": 2369.0, 
+                "src1": 2369.0, 
+                "dst1": 2524.223182
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494743.625, 
+                    5614556.375
+                ]
+            }, 
+            "properties": {
+                "ID": 1668, 
+                "sd_id": 122, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 423.0, 
+                "src": 211.5, 
+                "dst": 211.5, 
+                "src1": 211.5, 
+                "dst1": 310.945612
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494801.90625, 
+                    5614303.265625
+                ]
+            }, 
+            "properties": {
+                "ID": 671, 
+                "sd_id": 48, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 241.0, 
+                "src": 120.5, 
+                "dst": 120.5, 
+                "src1": 120.5, 
+                "dst1": 170.642506
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493441.28125, 
+                    5612822.484375
+                ]
+            }, 
+            "properties": {
+                "ID": 396, 
+                "sd_id": 31, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 104.0, 
+                "src": 52.0, 
+                "dst": 52.0, 
+                "src1": 52.0, 
+                "dst1": 53.146079
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6489772.671875, 
+                    5611313.984375
+                ]
+            }, 
+            "properties": {
+                "ID": 21, 
+                "sd_id": 4, 
+                "NAZWA": "Osiny", 
+                "LUDNOSC": 514.0, 
+                "src": 257.0, 
+                "dst": 257.0, 
+                "src1": 257.0, 
+                "dst1": 124.05079
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6491987.921875, 
+                    5616673.8125
+                ]
+            }, 
+            "properties": {
+                "ID": 142, 
+                "sd_id": 16, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 984.0, 
+                "src": 492.0, 
+                "dst": 492.0, 
+                "src1": 492.0, 
+                "dst1": 500.986294
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6490047.296875, 
+                    5618835.078125
+                ]
+            }, 
+            "properties": {
+                "ID": 53, 
+                "sd_id": 10, 
+                "NAZWA": "S\u0142awice", 
+                "LUDNOSC": 861.0, 
+                "src": 430.5, 
+                "dst": 430.5, 
+                "src1": 430.5, 
+                "dst1": 246.019269
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493892.703125, 
+                    5615047.515625
+                ]
+            }, 
+            "properties": {
+                "ID": 482, 
+                "sd_id": 35, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1463.0, 
+                "src": 731.5, 
+                "dst": 731.5, 
+                "src1": 731.5, 
+                "dst1": 1069.124005
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495218.953125, 
+                    5602917.0625
+                ]
+            }, 
+            "properties": {
+                "ID": 685, 
+                "sd_id": 49, 
+                "NAZWA": "Zimnice Wielkie", 
+                "LUDNOSC": 678.0, 
+                "src": 339.0, 
+                "dst": 339.0, 
+                "src1": 339.0, 
+                "dst1": 93.505717
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494175.78125, 
+                    5615450.6875
+                ]
+            }, 
+            "properties": {
+                "ID": 514, 
+                "sd_id": 37, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 997.0, 
+                "src": 498.5, 
+                "dst": 498.5, 
+                "src1": 498.5, 
+                "dst1": 856.742782
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6498734.359375, 
+                    5614951.890625
+                ]
+            }, 
+            "properties": {
+                "ID": 1431, 
+                "sd_id": 97, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 596.0, 
+                "src": 298.0, 
+                "dst": 298.0, 
+                "src1": 298.0, 
+                "dst1": 299.772285
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493526.34375, 
+                    5618984.234375
+                ]
+            }, 
+            "properties": {
+                "ID": 380, 
+                "sd_id": 29, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 833.0, 
+                "src": 416.5, 
+                "dst": 416.5, 
+                "src1": 416.5, 
+                "dst1": 342.527079
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6499728.265625, 
+                    5609656.65625
+                ]
+            }, 
+            "properties": {
+                "ID": 1605, 
+                "sd_id": 103, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1179.0, 
+                "src": 589.5, 
+                "dst": 589.5, 
+                "src1": 589.5, 
+                "dst1": 325.193084
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6498605.109375, 
+                    5615330.828125
+                ]
+            }, 
+            "properties": {
+                "ID": 1382, 
+                "sd_id": 95, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 2206.0, 
+                "src": 1103.0, 
+                "dst": 1103.0, 
+                "src1": 1103.0, 
+                "dst1": 1062.890778
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497128.046875, 
+                    5610047.859375
+                ]
+            }, 
+            "properties": {
+                "ID": 1068, 
+                "sd_id": 84, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1789.0, 
+                "src": 894.5, 
+                "dst": 894.5, 
+                "src1": 894.5, 
+                "dst1": 526.732545
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6487472.125, 
+                    5616579.21875
+                ]
+            }, 
+            "properties": {
+                "ID": 9, 
+                "sd_id": 1, 
+                "NAZWA": "Wrzoski", 
+                "LUDNOSC": 531.0, 
+                "src": 265.5, 
+                "dst": 265.5, 
+                "src1": 265.5, 
+                "dst1": 145.719964
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6486238.875, 
+                    5614385.453125
+                ]
+            }, 
+            "properties": {
+                "ID": 4, 
+                "sd_id": 0, 
+                "NAZWA": "Chr\u00f3\u015bcina", 
+                "LUDNOSC": 1600.0, 
+                "src": 800.0, 
+                "dst": 800.0, 
+                "src1": 800.0, 
+                "dst1": 297.20616
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6491658.625, 
+                    5622436.265625
+                ]
+            }, 
+            "properties": {
+                "ID": 104, 
+                "sd_id": 15, 
+                "NAZWA": "Borki", 
+                "LUDNOSC": 529.0, 
+                "src": 264.5, 
+                "dst": 264.5, 
+                "src1": 264.5, 
+                "dst1": 84.173218
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494404.171875, 
+                    5615194.0625
+                ]
+            }, 
+            "properties": {
+                "ID": 564, 
+                "sd_id": 40, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1186.0, 
+                "src": 593.0, 
+                "dst": 593.0, 
+                "src1": 593.0, 
+                "dst1": 925.311469
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6491983.78125, 
+                    5615354.578125
+                ]
+            }, 
+            "properties": {
+                "ID": 147, 
+                "sd_id": 17, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1481.0, 
+                "src": 740.5, 
+                "dst": 740.5, 
+                "src1": 740.5, 
+                "dst1": 740.566173
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496391.6875, 
+                    5614436.984375
+                ]
+            }, 
+            "properties": {
+                "ID": 903, 
+                "sd_id": 72, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 600.0, 
+                "src": 300.0, 
+                "dst": 300.0, 
+                "src1": 300.0, 
+                "dst1": 453.990946
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497132.953125, 
+                    5615150.125
+                ]
+            }, 
+            "properties": {
+                "ID": 1062, 
+                "sd_id": 83, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1084.0, 
+                "src": 542.0, 
+                "dst": 542.0, 
+                "src1": 542.0, 
+                "dst1": 821.318359
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496807.828125, 
+                    5612868.921875
+                ]
+            }, 
+            "properties": {
+                "ID": 962, 
+                "sd_id": 75, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1834.0, 
+                "src": 917.0, 
+                "dst": 917.0, 
+                "src1": 917.0, 
+                "dst1": 874.895464
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6499187.03125, 
+                    5614774.4375
+                ]
+            }, 
+            "properties": {
+                "ID": 1547, 
+                "sd_id": 101, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1841.0, 
+                "src": 920.5, 
+                "dst": 920.5, 
+                "src1": 920.5, 
+                "dst1": 800.101149
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494618.40625, 
+                    5614728.765625
+                ]
+            }, 
+            "properties": {
+                "ID": 617, 
+                "sd_id": 44, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 385.0, 
+                "src": 192.5, 
+                "dst": 192.5, 
+                "src1": 192.5, 
+                "dst1": 278.906021
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6492382.0, 
+                    5613603.171875
+                ]
+            }, 
+            "properties": {
+                "ID": 184, 
+                "sd_id": 18, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 888.0, 
+                "src": 444.0, 
+                "dst": 444.0, 
+                "src1": 444.0, 
+                "dst1": 446.729962
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495120.546875, 
+                    5614626.484375
+                ]
+            }, 
+            "properties": {
+                "ID": 735, 
+                "sd_id": 56, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 653.0, 
+                "src": 326.5, 
+                "dst": 326.5, 
+                "src1": 326.5, 
+                "dst1": 492.317379
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6498023.3125, 
+                    5615848.9375
+                ]
+            }, 
+            "properties": {
+                "ID": 1260, 
+                "sd_id": 92, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1288.0, 
+                "src": 644.0, 
+                "dst": 644.0, 
+                "src1": 644.0, 
+                "dst1": 659.582985
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6489385.921875, 
+                    5616639.5
+                ]
+            }, 
+            "properties": {
+                "ID": 27, 
+                "sd_id": 6, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 326.0, 
+                "src": 163.0, 
+                "dst": 163.0, 
+                "src1": 163.0, 
+                "dst1": 102.979658
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6505338.046875, 
+                    5607676.09375
+                ]
+            }, 
+            "properties": {
+                "ID": 1625, 
+                "sd_id": 109, 
+                "NAZWA": "Walidrogi", 
+                "LUDNOSC": 202.0, 
+                "src": 101.0, 
+                "dst": 101.0, 
+                "src1": 101.0, 
+                "dst1": 43.906875
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496837.40625, 
+                    5615020.15625
+                ]
+            }, 
+            "properties": {
+                "ID": 967, 
+                "sd_id": 76, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 690.0, 
+                "src": 345.0, 
+                "dst": 345.0, 
+                "src1": 345.0, 
+                "dst1": 525.986523
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6497031.59375, 
+                    5614656.296875
+                ]
+            }, 
+            "properties": {
+                "ID": 1023, 
+                "sd_id": 80, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 434.0, 
+                "src": 217.0, 
+                "dst": 217.0, 
+                "src1": 217.0, 
+                "dst1": 299.194078
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6490373.921875, 
+                    5608984.75
+                ]
+            }, 
+            "properties": {
+                "ID": 68, 
+                "sd_id": 12, 
+                "NAZWA": "Domecko", 
+                "LUDNOSC": 1318.0, 
+                "src": 659.0, 
+                "dst": 659.0, 
+                "src1": 659.0, 
+                "dst1": 266.945245
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495250.25, 
+                    5615011.34375
+                ]
+            }, 
+            "properties": {
+                "ID": 757, 
+                "sd_id": 60, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1372.0, 
+                "src": 686.0, 
+                "dst": 686.0, 
+                "src1": 686.0, 
+                "dst1": 997.378374
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495803.34375, 
+                    5614634.953125
+                ]
+            }, 
+            "properties": {
+                "ID": 1670, 
+                "sd_id": 124, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 603.0, 
+                "src": 301.5, 
+                "dst": 301.5, 
+                "src1": 301.5, 
+                "dst1": 397.922622
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6487576.484375, 
+                    5611117.390625
+                ]
+            }, 
+            "properties": {
+                "ID": 14, 
+                "sd_id": 2, 
+                "NAZWA": "Komprachcice", 
+                "LUDNOSC": 2873.0, 
+                "src": 1436.5, 
+                "dst": 1436.5, 
+                "src1": 1436.5, 
+                "dst1": 558.223363
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495498.28125, 
+                    5615549.234375
+                ]
+            }, 
+            "properties": {
+                "ID": 776, 
+                "sd_id": 63, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 34.0, 
+                "src": 17.0, 
+                "dst": 17.0, 
+                "src1": 17.0, 
+                "dst1": 26.129243
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495663.328125, 
+                    5606512.796875
+                ]
+            }, 
+            "properties": {
+                "ID": 761, 
+                "sd_id": 62, 
+                "NAZWA": "Boguszyce", 
+                "LUDNOSC": 539.0, 
+                "src": 269.5, 
+                "dst": 269.5, 
+                "src1": 269.5, 
+                "dst1": 79.796894
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496264.75, 
+                    5612902.640625
+                ]
+            }, 
+            "properties": {
+                "ID": 830, 
+                "sd_id": 66, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1083.0, 
+                "src": 541.5, 
+                "dst": 541.5, 
+                "src1": 541.5, 
+                "dst1": 579.382941
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494448.453125, 
+                    5615045.75
+                ]
+            }, 
+            "properties": {
+                "ID": 1662, 
+                "sd_id": 116, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 356.0, 
+                "src": 178.0, 
+                "dst": 178.0, 
+                "src1": 178.0, 
+                "dst1": 268.867891
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496207.515625, 
+                    5615905.984375
+                ]
+            }, 
+            "properties": {
+                "ID": 858, 
+                "sd_id": 68, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 5884.0, 
+                "src": 2942.0, 
+                "dst": 2942.0, 
+                "src1": 2942.0, 
+                "dst1": 3665.14601
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6490168.765625, 
+                    5623699.15625
+                ]
+            }, 
+            "properties": {
+                "ID": 46, 
+                "sd_id": 8, 
+                "NAZWA": "Dobrze\u0144 Wielki", 
+                "LUDNOSC": 751.0, 
+                "src": 375.5, 
+                "dst": 375.5, 
+                "src1": 375.5, 
+                "dst1": 99.236444
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6489809.359375, 
+                    5621427.3125
+                ]
+            }, 
+            "properties": {
+                "ID": 54, 
+                "sd_id": 11, 
+                "NAZWA": "Zelazna", 
+                "LUDNOSC": 646.0, 
+                "src": 323.0, 
+                "dst": 323.0, 
+                "src1": 323.0, 
+                "dst1": 89.194514
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6496468.703125, 
+                    5616480.875
+                ]
+            }, 
+            "properties": {
+                "ID": 890, 
+                "sd_id": 71, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 4181.0, 
+                "src": 2090.5, 
+                "dst": 2090.5, 
+                "src1": 2090.5, 
+                "dst1": 2567.085803
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6490889.25, 
+                    5604567.90625
+                ]
+            }, 
+            "properties": {
+                "ID": 86, 
+                "sd_id": 14, 
+                "NAZWA": "Pr\u00f3szk\u00f3w", 
+                "LUDNOSC": 2683.0, 
+                "src": 1341.5, 
+                "dst": 1341.5, 
+                "src1": 1341.5, 
+                "dst1": 510.525572
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6494538.015625, 
+                    5609666.171875
+                ]
+            }, 
+            "properties": {
+                "ID": 275, 
+                "sd_id": 25, 
+                "NAZWA": "Folwark", 
+                "LUDNOSC": 255.0, 
+                "src": 127.5, 
+                "dst": 127.5, 
+                "src1": 127.5, 
+                "dst1": 68.963975
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493787.96875, 
+                    5615251.828125
+                ]
+            }, 
+            "properties": {
+                "ID": 1663, 
+                "sd_id": 117, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 420.0, 
+                "src": 210.0, 
+                "dst": 210.0, 
+                "src1": 210.0, 
+                "dst1": 325.319418
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6495399.953125, 
+                    5614840.046875
+                ]
+            }, 
+            "properties": {
+                "ID": 1660, 
+                "sd_id": 114, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 439.0, 
+                "src": 219.5, 
+                "dst": 219.5, 
+                "src1": 219.5, 
+                "dst1": 360.531683
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493831.984375, 
+                    5614617.9375
+                ]
+            }, 
+            "properties": {
+                "ID": 456, 
+                "sd_id": 34, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 1037.0, 
+                "src": 518.5, 
+                "dst": 518.5, 
+                "src1": 518.5, 
+                "dst1": 763.814834
+            }
+        }, 
+        {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    6493083.328125, 
+                    5612459.828125
+                ]
+            }, 
+            "properties": {
+                "ID": 257, 
+                "sd_id": 23, 
+                "NAZWA": "opole", 
+                "LUDNOSC": 996.0, 
+                "src": 498.0, 
+                "dst": 498.0, 
+                "src1": 498.0, 
+                "dst1": 392.252356
+            }
+        }
+    ]
+}
