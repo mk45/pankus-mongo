@@ -15,11 +15,13 @@ from pankus.data_helpers.make_points import make_points
 from pankus.vector.repair import repair
 from pankus.intopp.make_src_dst import make_src_dst
 from pankus.intopp.make_weight_rings import make_weight_rings
+from pankus.intopp.make_uniform_rings import make_uniform_rings
 from pankus.intopp.make_rings_total import make_rings_total
 from pankus.intopp.make_motion_exchange import make_motion_exchange
 from pankus.intopp.make_shift import make_shift
 from pankus.intopp.normalize_to_original import normalize_to_original
 from pankus.intopp.make_dst_shift import make_destinations_shift
+from pankus.intopp.make_src_shift import make_sources_shift
 from pankus.intopp.make_gen_shift import make_general_shift
 from pankus.paths.make_dendryts import make_dendryts
 from pankus.paths.make_kpaths import make_kpaths
