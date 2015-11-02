@@ -21,7 +21,8 @@ setup(
         #'pankus.analysis_tools'
     ],
     requires=[
-        'progressbar2',
+        #'progressbar2',
+        'progressbar',
         'pymongo',
         'psutil'
     ],
