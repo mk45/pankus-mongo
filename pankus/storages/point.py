@@ -12,5 +12,4 @@ data
     p - point geometry [x, y]
 """
 
-
 point = MongoCollectionStorageFactory(point_name, [id_key])
