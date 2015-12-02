@@ -24,7 +24,8 @@ def make_uniform_rings(rings_count,center_in_ring_zero=False):
     ring.delete_many({})
     new_ring=[]
     pbar = Pbar('make rings : ',featured_point.count())
-    max_distance=max(list(dendryt.find({})))-2*sd_surplus
+
+    max_distance=max([d[weight_key] for d in  dendryt.find({})])-2*sd_surplus
     one_step=max_distance/rings_count
     for start_point in featured_point.find():
         pbar.plus_one()
