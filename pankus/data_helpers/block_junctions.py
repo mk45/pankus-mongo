@@ -64,4 +64,4 @@ if __name__=="__main__":
     parser.add_argument("points",help="geojson encoded list of ",type=str)
     args=parser.parse_args()
 
-    turn_off_function(json.loads(args.points))
+    block_junctions(json.loads(args.points))
