@@ -20,13 +20,14 @@ def make_dendryts():
     Makes all dendryts for featured points
     """
 
-    # this line gives you speed
-    conn = RamCollection(connection)
-    # conn=connection
 
     dendryt.delete_many({})
     N = point.count()
     pbar = Pbar('all dendryts: ', featured_point.count())
+
+    # this line gives you speed
+    conn = RamCollection(connection)
+    # conn=connection
 
     sd_id_list = [sd_id[id_key] for sd_id in featured_point.find()]
 
