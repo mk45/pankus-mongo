@@ -18,7 +18,7 @@ setup(
         'pankus.data_helpers',
         'pankus.stress',
         'pankus.vector',
-        #'pankus.analysis_tools'
+        'pankus.analysis_tools'
     ],
     requires=[
         #'progressbar2',

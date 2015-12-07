@@ -77,6 +77,10 @@ delta_key='d'
 warn_search_size = 1
 repair_size = 2**-6
 
+# selectivity changes voting
+voting_table_name='voting'
+satisfied_destinations_key='sat_dst'
+
 # collection names
 line_conn_name="line_conn"
 connection_name = "connection"
