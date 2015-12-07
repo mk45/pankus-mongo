@@ -13,7 +13,7 @@ from pankus.defaults.config import sources_key,destinations_key,motion_quantity_
 
 
 
-def sum_stats(to_sd_point_motion_sum_name):
+def sum_stats(to_sd_point_motion_sum_name=None):
 
     #pbar = Pbar('make analysis',src_dst.count())
 
@@ -30,12 +30,12 @@ def sum_stats(to_sd_point_motion_sum_name):
 
     for sd in ram_sd_point.find():
         pbar.plus_one()
-        sd_id=sd[sd_id_key]
-
-        sd[to_sd_point_motion_sum_name]=\
-            sum([mx[motion_quantity_key] for mx in ram_motion_exchange.find({
-                sd_end_key:sd_id
-            })])
+        if to_sd_point_motion_sum_name:
+            sd_id=sd[sd_id_key]
+            sd[to_sd_point_motion_sum_name]=\
+                sum([mx[motion_quantity_key] for mx in ram_motion_exchange.find({
+                    sd_end_key:sd_id
+                })])
         assigned_dst_diffs.append(sd[to_sd_point_motion_sum_name]-sd[destinations_key])
 
     sd_point.delete_many({})
