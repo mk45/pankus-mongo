@@ -3,9 +3,9 @@
 __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 
 from pankus.database.mongo_collection import MongoCollectionStorageFactory
-from pankus.defaults.config import voting_table_name,sd_start_key,sd_end_key
+from pankus.defaults.config import votes_table_name,sd_start_key,sd_end_key
 
-"""Storage for voting
+"""Storage for votes
 
 Module creates object for database collection connection
 
@@ -21,4 +21,4 @@ data:
 
 """
 
-voting = MongoCollectionStorageFactory(voting_table_name,[sd_start_key,sd_end_key])
+votes = MongoCollectionStorageFactory(votes_table_name,[sd_start_key,sd_end_key])
