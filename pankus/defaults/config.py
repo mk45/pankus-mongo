@@ -78,7 +78,7 @@ warn_search_size = 1
 repair_size = 2**-6
 
 # selectivity changes voting
-voting_table_name='voting'
+votes_table_name='votes'
 satisfied_destinations_key='sat_dst'
 
 # collection names
