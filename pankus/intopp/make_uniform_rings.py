@@ -5,6 +5,7 @@ __author__ = 'Maciej Kamiński Politechnika Wrocławska'
 from pankus.storages.ring import ring
 from pankus.storages.featured_point import featured_point
 from pankus.storages.dendryt import dendryt
+from pankus.helpers.start_cached_collection import StartCachedCollection
 from pankus.helpers.pbar import Pbar
 from pankus.defaults.config import \
     start_key,end_key,id_key,weight_key,\
@@ -24,13 +25,13 @@ def make_uniform_rings(rings_count,center_in_ring_zero=False):
     ring.delete_many({})
     new_ring=[]
     pbar = Pbar('make rings : ',featured_point.count())
-
+    ram_dendryt = StartCachedCollection(dendryt,start_key,end_key)
     max_distance=max([d[weight_key] for d in  dendryt.find({})])-2*sd_surplus
     one_step=max_distance/rings_count
     for start_point in featured_point.find():
         pbar.plus_one()
         for end_point in featured_point.find():
-            weight = dendryt.find_one(
+            weight = ram_dendryt.find_one(
                 {start_key: start_point[id_key],
                  end_key: end_point[id_key]})[weight_key]
 
