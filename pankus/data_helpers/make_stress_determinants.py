@@ -24,10 +24,12 @@ def make_stress_determinants():
         line[junction_determinant_key]=0
         line[interlace_determinant_key]=0
 
+    end_ids=[]
     for line in ram_line_conn.find():
         pbar.plus_one()
         start = line[start_key]
         end = line[end_key]
+        end_ids.append(end)
         # stress doesnt have to be ordered
         # print stress_line
         ordered_intl = line[ordered_interlace_info_key]
@@ -40,8 +42,17 @@ def make_stress_determinants():
         })
         lc[interlace_determinant_key]=sum(map(sum, ordered_intl)) -\
                                   ordered_intl[0][0] - ordered_intl[-1][-1]
+
+        # this is temporal value used to obtain determinant for whole junction
         lc[junction_determinant_key] += sum(ordered_junc) -\
                                         ordered_junc[0]
+
+    for end in end_ids:
+        junction_sum = sum([lc[junction_determinant_key] for lc in ram_line_conn.find({end_key:end})])
+        for lc in ram_line_conn.find({end_key:end}):
+            lc[junction_determinant_key]=junction_sum
+
+
     line_conn.delete_many({})
     line_conn.insert_many(ram_line_conn.find())
 
