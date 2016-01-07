@@ -35,6 +35,8 @@ class StartCachedCollection(object):
                 self.cached_d_node=search_opt[self.sk]
                 
                 for d in self.basecoll.find({self.sk:search_opt[self.sk]}):
+                    while not len(self.cached_d)>d[self.ek]:
+                        self.cached_d.append([])
                     self.cached_d[d[self.ek]].append(d)
             return self.cached_d[search_opt[self.ek]]
         else:
