@@ -103,7 +103,7 @@ def make_withdrawal_excess():
     # update withdrawal table
     if ram_motion_exchange_withdrawal_excess.count()!=0:
         for mx in ram_motion_exchange.find():
-            ram_motion_exchange_withdrawal_excess.find({
+            ram_motion_exchange_withdrawal_excess.find_one({
                 sd_start_key:mx[sd_start_key],
                 sd_end_key:mx[sd_end_key]
             })[motion_quantity_key]+=mx[motion_quantity_key]
