@@ -75,7 +75,7 @@ def make_withdrawal_excess():
                 }):
                 motion_that_should_be=mx[motion_quantity_key]/region[excess_rate_key]
                 #motion_to_withdraw_quantity=mx[motion_quantity_key]-motion_that_should_be
-                ram_src_dst.find({
+                ram_src_dst.find_one({
                     sd_id_key:mx[sd_start_key]
                 })[new_src_key]-=motion_that_should_be
 
