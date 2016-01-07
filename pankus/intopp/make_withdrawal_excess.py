@@ -86,8 +86,9 @@ def make_withdrawal_excess():
     # set new selectivity new dst new src
     for region in ram_src_dst.find():
         print region[sd_id_key],region[realized_percentage_key],sum_new_destinations
-        region[selectivity_key]=\
-            ((-math.log(1-region[realized_percentage_key])*1000000)/sum_new_destinations)
+        if region[realized_percentage_key]<1:
+            region[selectivity_key]=\
+                ((-math.log(1-region[realized_percentage_key])*1000000)/sum_new_destinations)
 
 
     # update withdrawal table
