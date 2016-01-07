@@ -97,7 +97,7 @@ def make_withdrawal_excess():
                 sd_end_key:mx[sd_end_key]
             })[motion_quantity_key]+=mx[motion_quantity_key]
         motion_exchange_withdrawal_excess.delete_many({})
-        motion_exchange_withdrawal_excess.insert_many(ram_motion_exchange.find())
+        motion_exchange_withdrawal_excess.insert_many(ram_motion_exchange_withdrawal_excess.find())
     else:
         motion_exchange_withdrawal_excess.insert_many(ram_motion_exchange.find())
 
