@@ -31,7 +31,7 @@ def make_withdrawal_excess():
 
     sum_destinations=sum([sd[destinations_key] for sd in ram_src_dst.find()])
     sum_sources=sum([sd[sources_key] for sd in ram_src_dst.find()])
-
+    print sum_destinations,sum_sources
     # we have to proceed only if sources total and destinations total are relatively close (equal)
     if sum_destinations>1.01*sum_sources or sum_destinations<0.99*sum_destinations:
         print "Difference between src and dst over one percent! Exiting."
