@@ -63,6 +63,7 @@ in_ring_total_key="in_ring_total"
 # surplus weight for cut-offs
 
 sd_surplus=0
+#sd_surplus=100000
 blocking_weight=100000
 
 # dendryt pred succ
@@ -94,6 +95,7 @@ src_dst_name="src_dst"
 ring_name="ring"
 ring_total_name="ring_total"
 motion_exchange_name="motion_exchange"
+motion_exchange_withdrawal_excess_name="motion_exchange_we"
 turn_info_name="turn_info"
 stress_matrix_name="stress_matrix"
 path_name= "path"
