@@ -31,7 +31,6 @@ def make_withdrawal_excess():
 
     sum_destinations=sum([sd[destinations_key] for sd in ram_src_dst.find()])
     sum_sources=sum([sd[sources_key] for sd in ram_src_dst.find()])
-    print sum_destinations,sum_sources
 
     # we have to proceed only if sources total and destinations total are relatively close (equal)
     if float(sum_destinations)/sum_sources>1.01 or float(sum_destinations)/sum_sources<0.99:
@@ -43,8 +42,6 @@ def make_withdrawal_excess():
     realized_percentage_key="realized_percentage"
     inside_realized_motion_key="inside_realized_motion"
     excess_rate_key = "excess"
-    #new_dst_key="new_dst"
-    #new_src_key="new_src"
 
     # motion realized by region
     # motion realized in region
@@ -54,7 +51,6 @@ def make_withdrawal_excess():
         region[inside_realized_motion_key]=sum(mx[motion_quantity_key] for mx in ram_motion_exchange.find({
             sd_end_key:region[sd_id_key]
           }))
-        #region[new_src_key]=region[sources_key]
 
 
     # fraction of realized motion
@@ -73,6 +69,7 @@ def make_withdrawal_excess():
                 motion_that_should_be=mx[motion_quantity_key]/region[excess_rate_key]
                 mx[motion_quantity_key]=motion_that_should_be
 
+    # compute new src and dst
     for region in ram_src_dst.find():
         pbar.plus_one()
         region[sources_key]=region[sources_key]-\
@@ -113,4 +110,4 @@ def make_withdrawal_excess():
     pbar.finish()
 
 if __name__ == "__main__":
-    make_motion_exchange()
+    make_withdrawal_excess()
