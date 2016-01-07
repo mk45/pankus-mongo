@@ -39,7 +39,7 @@ def make_withdrawal_excess():
         return
 
     # we will change properly produced motion exchange matrix
-    make_motion_exchange()
+    #make_motion_exchange()
 
     pbar = Pbar('make withdraw excess: ',src_dst.count())
 
@@ -107,15 +107,15 @@ def make_withdrawal_excess():
                 sd_start_key:mx[sd_start_key],
                 sd_end_key:mx[sd_end_key]
             })[motion_quantity_key]+=mx[motion_quantity_key]
-        motion_exchange_withdrawal_excess.delete_many()
+        motion_exchange_withdrawal_excess.delete_many({})
         motion_exchange_withdrawal_excess.insert_many(ram_motion_exchange.find())
     else:
         motion_exchange_withdrawal_excess.insert_many(ram_motion_exchange.find())
 
-    src_dst.delete_many()
+    src_dst.delete_many({})
     src_dst.insert_many(ram_src_dst.find())
 
-    motion_exchange.delete_many()
+    motion_exchange.delete_many({})
     motion_exchange.insert_many(ram_motion_exchange.find())
 
     pbar.finish()
