@@ -25,6 +25,10 @@ def make_withdrawal_excess():
     # we start from simple motion exchange
     pbar = Pbar('make withdraw excess: ',src_dst.count())
 
+    ram_src_dst=RamCollection(src_dst)
+    ram_motion_exchange=RamCollection(motion_exchange)
+    ram_motion_exchange_withdrawal_excess=RamCollection(motion_exchange_withdrawal_excess)
+
     sum_destinations=sum([sd[destinations_key] for sd in ram_src_dst.find()])
     sum_sources=sum([sd[sources_key] for sd in ram_src_dst.find()])
 
@@ -38,10 +42,6 @@ def make_withdrawal_excess():
     make_motion_exchange()
 
     pbar = Pbar('make withdraw excess: ',src_dst.count())
-
-    ram_src_dst=RamCollection(src_dst)
-    ram_motion_exchange=RamCollection(motion_exchange)
-    ram_motion_exchange_withdrawal_excess=RamCollection(motion_exchange_withdrawal_excess)
 
 
     realized_percentage_key="realized_percentage"
