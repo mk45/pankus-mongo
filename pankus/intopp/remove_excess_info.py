@@ -12,9 +12,10 @@ from pankus.helpers.ram_collection import RamCollection
 
 def remove_excess_info():
 
-    pbar = Pbar('removing excess info: ',line_conn.count())
-    motion_exchange_withdrawal_excess.delete_many({})
-    pbar.finish()
+    if line_conn.count()!=0:
+        pbar = Pbar('removing excess info: ',line_conn.count())
+        motion_exchange_withdrawal_excess.delete_many({})
+        pbar.finish()
 
 
 if __name__ == "__main__":
