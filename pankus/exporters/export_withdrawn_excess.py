@@ -14,7 +14,7 @@ def export_withdrawn_excess():
 
     ram_src_dst=RamCollection(src_dst)
     ram_motion_exchange_withdrawal_excess=RamCollection(motion_exchange_withdrawal_excess)
-    ram_ring=RamCollection(ring,[sd_start_key,ring_key])
+    ram_ring=RamCollection(ring,[sd_start_key,sd_end_key])
 
     output=[]
     pbar = Pbar('exporting: ',ram_src_dst.count())
