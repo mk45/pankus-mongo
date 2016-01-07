@@ -25,11 +25,11 @@ def export_withdrawn_excess():
             output.append({
                 sd_start_key:region_start[sd_id_key],
                 sd_end_key:region_end[sd_id_key],
-                motion_quantity_key:ram_motion_exchange_withdrawal_excess.find({
+                motion_quantity_key:ram_motion_exchange_withdrawal_excess.find_one({
                     sd_start_key:region_start[sd_id_key],
                     sd_end_key:region_end[sd_id_key]
                 })[motion_quantity_key],
-                ring_key:ram_ring.find({
+                ring_key:ram_ring.find_one({
                     sd_start_key:region_start[sd_id_key],
                     sd_end_key:region_end[sd_id_key]
                 })[ring_key]
