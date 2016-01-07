@@ -76,17 +76,16 @@ def make_withdrawal_excess():
                     sd_end_key:region[sd_id_key]
                 }):
                 motion_that_should_be=mx[motion_quantity_key]/region[excess_rate_key]
-                #motion_to_withdraw_quantity=mx[motion_quantity_key]-motion_that_should_be
+                motion_to_withdraw=mx[motion_quantity_key]-motion_that_should_be
                 ram_src_dst.find_one({
                     sd_id_key:mx[sd_start_key]
                 })[new_src_key]-=motion_that_should_be
-
                 mx[motion_quantity_key]=motion_that_should_be
-                #region[inside_realized_motion_key]-=motion_withdraw_quantity
+                region[inside_realized_motion_key]-=motion_to_withdraw
             # if excess occurs compute again inside_realized_motion
-            region[inside_realized_motion_key]=sum(mx[motion_quantity_key] for mx in ram_motion_exchange.find({
-                sd_end_key:region[sd_id_key]
-              }))
+            #region[inside_realized_motion_key]=sum(mx[motion_quantity_key] for mx in ram_motion_exchange.find({
+            #    sd_end_key:region[sd_id_key]
+            #  }))
         region[new_dst_key]=region[destinations_key]-region[inside_realized_motion_key]
         assert region[new_dst_key]>=0
 
