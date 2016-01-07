@@ -20,8 +20,16 @@ def export_withdrawn_excess():
     ram_ring=RamCollection(ring,[sd_start_key,sd_end_key])
     ram_sd_point=RamCollection(sd_point,[sd_id_key])
 
+
+    if ram_motion_exchange_withdrawal_excess.count()==0:
+        print "Nothing to export"
+        return
+
     output=[]
     pbar = Pbar('exporting: ',ram_src_dst.count())
+
+
+
     for region_start in ram_src_dst.find():
         pbar.plus_one()
         for region_end in ram_src_dst.find():
