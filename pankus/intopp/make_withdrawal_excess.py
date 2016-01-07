@@ -34,10 +34,11 @@ def make_withdrawal_excess():
     print sum_destinations,sum_sources
 
     # we have to proceed only if sources total and destinations total are relatively close (equal)
-    if sum_destinations/sum_sources>1.01 or sum_destinations/sum_destinations<0.99:
+    if float(sum_destinations)/sum_sources>1.01 or float(sum_destinations)/sum_sources<0.99:
         print "Difference between src and dst over one percent! Exiting."
         pbar.finish()
         return
+
 
     # we will change properly produced motion exchange matrix
     #make_motion_exchange()
