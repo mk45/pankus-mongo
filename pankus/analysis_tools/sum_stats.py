@@ -17,18 +17,18 @@ def sum_stats(to_sd_point_motion_sum_name=None):
 
     #pbar = Pbar('make analysis',src_dst.count())
 
-    pbar = Pbar('get statistics: ',sd_point.count())
+    pbar = Pbar('get statistics: ',src_dst.count())
     ram_motion_exchange=RamCollection(motion_exchange)
 
     motions_total=sum([motion[motion_quantity_key] for motion in ram_motion_exchange.find()])
 
-    ram_sd_point=RamCollection(sd_point,[sd_id_key])
-    sources_total = sum([point[sources_key] for point in ram_sd_point.find()])
-    destinations_total = sum([point[destinations_key] for point in ram_sd_point.find()])
+    ram_src_dst=RamCollection(src_dst)
+    sources_total = sum([point[sources_key] for point in ram_src_dst.find()])
+    destinations_total = sum([point[destinations_key] for point in ram_src_dst.find()])
 
     assigned_dst_diffs=[]
 
-    for sd in ram_sd_point.find():
+    for sd in ram_src_dst.find():
         pbar.plus_one()
         sd_id=sd[sd_id_key]
         total_to_sd_motion=\
@@ -41,6 +41,12 @@ def sum_stats(to_sd_point_motion_sum_name=None):
             sd[to_sd_point_motion_sum_name]=total_to_sd_motion
 
     if to_sd_point_motion_sum_name:
+        ram_sd_point=RamCollection(sd_point)
+        for sd in ram_sd_point.find():
+            sd[to_sd_point_motion_sum_name]=ram_src_dst.find_one({
+                sd_id_key:sd[sd_id_key]
+            })[to_sd_point_motion_sum_name]
+
         sd_point.delete_many({})
         sd_point.insert_many(ram_sd_point.find())
     pbar.finish()
@@ -52,6 +58,6 @@ def sum_stats(to_sd_point_motion_sum_name=None):
     print "lowest realization",min(assigned_dst_diffs)
     print "highest realization",max(assigned_dst_diffs)
     print "assign and reality distance:", sqrt(sum(a**2 for a in assigned_dst_diffs))/\
-                                          sqrt(sum([b[destinations_key]**2 for b  in ram_sd_point.find({})]))
+                                          sqrt(sum([b[destinations_key]**2 for b  in ram_src_dst.find({})]))
 
 
