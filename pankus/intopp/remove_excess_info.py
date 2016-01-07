@@ -10,7 +10,7 @@ from pankus.defaults.config import \
 from pankus.helpers.ram_collection import RamCollection
 
 
-def remove_stress_info():
+def remove_excess_info():
 
     pbar = Pbar('removing stress info: ',line_conn.count())
     motion_exchange_withdrawal_excess.delete_many({})
