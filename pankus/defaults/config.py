@@ -27,6 +27,7 @@ sd_id_key='sd_id'
 # importers adds an extension
 net_filename='net'
 sd_filename='sd'
+distances_filename='distances'
 # net_out sd_points_out
 net_out_filename='net_out'
 sd_out_filename='sd_out'
@@ -61,10 +62,16 @@ to_ring_total_key="to_ring_total"
 in_ring_total_key="in_ring_total"
 
 # surplus weight for cut-offs
+if 'sd_surplus' not in globals():
+    sd_surplus=0
 
-sd_surplus=0
 #sd_surplus=100000
 blocking_weight=100000
+
+#vector repair constants
+warn_search_size = 1
+repair_size = 2**-6
+
 
 # dendryt pred succ
 successor_key='x'
@@ -74,9 +81,6 @@ predecessor_key='y'
 path_key='path'
 delta_key='d'
 
-#vector repair constants
-warn_search_size = 1
-repair_size = 2**-6
 
 # selectivity changes voting
 votes_table_name='votes'
