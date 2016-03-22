@@ -13,7 +13,7 @@ from pankus.defaults.config import ring_key,sd_id_key,sd_start_key,\
 import csv
 
 
-def export_withdrawn_excess():
+def export_motion_exchange():
 
     ram_src_dst=RamCollection(src_dst)
     ram_motion_exchange=RamCollection(motion_exchange)
