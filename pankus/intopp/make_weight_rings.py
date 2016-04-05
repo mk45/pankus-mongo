@@ -6,6 +6,7 @@ from pankus.storages.ring import ring
 from pankus.storages.featured_point import featured_point
 from pankus.storages.dendryt import dendryt
 from pankus.helpers.start_cached_collection import StartCachedCollection
+from pankus.helpers.ram_collection import RamCollection
 from pankus.helpers.pbar import Pbar
 from pankus.defaults.config import \
     start_key,end_key,id_key,weight_key,\
@@ -26,7 +27,9 @@ def make_weight_rings(weight_delta,center_in_ring_zero=False):
     ring.delete_many({})
     new_ring=[]
     pbar = Pbar('make rings : ',featured_point.count())
-    ram_dendryt = StartCachedCollection(dendryt,start_key,end_key)
+
+    #ram_dendryt = StartCachedCollection(dendryt,start_key,end_key)
+    ram_dendryt=RamCollection(dendryt)
     for start_point in featured_point.find():
         pbar.plus_one()
         for end_point in featured_point.find():
