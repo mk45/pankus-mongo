@@ -30,9 +30,20 @@ def import_csv2dendryt():
             assert start_key in line_record
             assert end_key in line_record
             assert weight_key in line_record
-            new_dendryt.append(line_record)
-            if line_record[start_key] not in sd_points:
-                sd_points.append(line_record[start_key])
+            try:
+                new_dendryt.append({
+                    start_key:int(line_record[start_key]),
+                    end_key:int(line_record[end_key]),
+                    weight_key:float(line_record[weight_key])
+                })
+            except:
+                raise TypeError("Only numeric values! "+
+                                str(line_record[start_key])+' '+
+                                str(line_record[end_key])+' '+
+                                str(line_record[weight_key])
+                                )
+            if int(line_record[start_key]) not in sd_points:
+                sd_points.append(int(line_record[start_key]))
 
         for sd_point in sd_points:
             new_featured_points.append({
