@@ -29,7 +29,7 @@ def make_weight_rings(weight_delta,center_in_ring_zero=False):
     pbar = Pbar('make rings : ',featured_point.count())
 
     #ram_dendryt = StartCachedCollection(dendryt,start_key,end_key)
-    ram_dendryt=RamCollection(dendryt)
+    ram_dendryt=RamCollection(dendryt,[start_key,end_key])
     for start_point in featured_point.find():
         pbar.plus_one()
         for end_point in featured_point.find():
