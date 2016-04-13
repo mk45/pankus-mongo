@@ -38,8 +38,8 @@ def import_csv2dendryt():
                 })
             except:
                 raise TypeError("Only numeric values! "+
-                                str(line_record[start_key])+' '+
-                                str(line_record[end_key])+' '+
+                                str(line_record[start_key])+', '+
+                                str(line_record[end_key])+', '+
                                 str(line_record[weight_key])
                                 )
             if int(line_record[start_key]) not in sd_points:

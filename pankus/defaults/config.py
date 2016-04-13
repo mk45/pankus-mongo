@@ -55,6 +55,10 @@ sources_key='src'
 destinations_key='dst'
 selectivity_key='sel'
 
+convolution_a_key="conv_a"
+convolution_b_key="conv_b"
+convolution_alpha_key="conv_alpha"
+
 #ring
 ring_key='r'
 points_in_ring_key='points_in_ring'
