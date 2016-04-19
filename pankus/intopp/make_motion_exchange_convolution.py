@@ -21,7 +21,7 @@ def convolution_cdf(sources,selectivity,conv_a,conv_b):
         return 1.0 - math.exp(-selectivity*sources)
 
     const = 1.0 - math.exp(-selectivity*conv_a)
-    print "c1",const
+    #print "c1",const
     if sources>conv_a and sources<=conv_b+conv_a:
         return const+(math.exp(-selectivity*(conv_a+sources))*\
                      (math.exp(selectivity*sources)*\
@@ -32,7 +32,7 @@ def convolution_cdf(sources,selectivity,conv_a,conv_b):
                      (math.exp(selectivity*(conv_a+conv_b))*\
                       ((-conv_a*selectivity)+((conv_a+conv_b)*selectivity)-1.0)+\
                       math.exp(conv_a*selectivity)))/(conv_b*selectivity)
-    print "c2",const
+    #print "c2",const
     return const+((1.0-math.exp(conv_b*selectivity))*\
                 math.exp(-selectivity*(conv_a+conv_b+sources))*\
                 (math.exp(selectivity*(conv_a+conv_b))-
