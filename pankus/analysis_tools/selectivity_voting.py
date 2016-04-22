@@ -104,7 +104,7 @@ def selectivity_voting(aggression):
             selectivity=voted[selectivity_key]
 
             if in_ring_total!=0:
-                change_scaling_factor=(
+                change_scaling_factor=     e(
                         (to_ring_total+in_ring_total)*exp(-(to_ring_total+in_ring_total)*selectivity/1000000)-\
                         (to_ring_total)*exp(-to_ring_total*selectivity/1000000)
                     )/in_ring_total
@@ -112,8 +112,11 @@ def selectivity_voting(aggression):
                 change_scaling_factor=0
 
             #produce weighted sum
-            nominator+=(total_to_sd_motion-destinations)*change_scaling_factor*motion
-            denominator+=abs(change_scaling_factor*motion)
+            #nominator+=(total_to_sd_motion-destinations)*change_scaling_factor*motion
+            #denominator+=abs(change_scaling_factor*motion)
+            nominator+=(total_to_sd_motion-destinations)*motion
+            denominator+=
+
 
 
         if denominator!=0:
