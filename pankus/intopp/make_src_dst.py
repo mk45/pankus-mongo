@@ -40,9 +40,9 @@ def make_src_dst(selectivity=None):
                 alpha=1.0
 
         except:
-            conv_a=0.0
-            conv_b=0.0
-            alpha=0.0
+            conv_a=0
+            conv_b=0
+            alpha=0
 
         new_src_dst.append({
             sd_id_key: point[sd_id_key],
