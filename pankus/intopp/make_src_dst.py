@@ -6,7 +6,8 @@ from pankus.storages.sd_point import sd_point
 from pankus.storages.src_dst import src_dst
 from pankus.helpers.pbar import Pbar
 from pankus.defaults.config import \
-    sd_id_key,sources_key,destinations_key,selectivity_key
+    sd_id_key,sources_key,destinations_key,selectivity_key,\
+    convolution_a_key,convolution_b_key,convolution_alpha_key
 import argparse
 
 
@@ -20,22 +21,38 @@ def make_src_dst(selectivity=None):
     pbar = Pbar('make src_dst: ',sd_point.count())
     for point in sd_point.find():
         pbar.plus_one()
-        if selectivity:
-            new_src_dst.append({
-                sd_id_key: point[sd_id_key],
-                sources_key: point[sources_key],
-                destinations_key: point[destinations_key],
-                selectivity_key: selectivity
 
-            })
+        # selectivity presence
+        if selectivity:
+            sel=float(selectivity)
         else:
             assert selectivity_key in point
-            new_src_dst.append({
-                sd_id_key: point[sd_id_key],
-                sources_key: point[sources_key],
-                destinations_key: point[destinations_key],
-                selectivity_key: point[selectivity_key]
-            })
+            sel=point[selectivity_key]
+
+        try:
+            conv_a=float(point[convolution_a_key])
+            conv_b=float(point[convolution_b_key])
+            try:
+                alpha=float(point[convolution_alpha_key])
+            except:
+                alpha=1.0
+
+        except:
+            conv_a=0.0
+            conv_b=0.0
+            alpha=0.0
+
+        new_src_dst.append({
+            sd_id_key: point[sd_id_key],
+            sources_key: point[sources_key],
+            destinations_key: point[destinations_key],
+            selectivity_key: sel,
+            convolution_a_key:conv_a,
+            convolution_b_key:conv_b,
+            convolution_alpha_key:alpha
+        })
+
+
     src_dst.delete_many({})
     src_dst.insert_many(new_src_dst)
     pbar.finish()
