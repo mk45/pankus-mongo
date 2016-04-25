@@ -32,8 +32,10 @@ def make_src_dst(selectivity=None):
         try:
             conv_a=float(point[convolution_a_key])
             conv_b=float(point[convolution_b_key])
+            assert conv_b>=0.0
             try:
                 alpha=float(point[convolution_alpha_key])
+                assert alpha>=0.0 and alpha<=1.0
             except:
                 alpha=1.0
 
