@@ -27,7 +27,7 @@ def make_src_dst(selectivity=None):
             sel=float(selectivity)
         else:
             assert selectivity_key in point
-            sel=point[selectivity_key]
+            sel=float(point[selectivity_key])
 
         try:
             conv_a=float(point[convolution_a_key])
