@@ -45,9 +45,9 @@ def make_src_dst(selectivity=None):
             alpha=0
 
         new_src_dst.append({
-            sd_id_key: point[sd_id_key],
-            sources_key: point[sources_key],
-            destinations_key: point[destinations_key],
+            sd_id_key: int(point[sd_id_key]),
+            sources_key: float(point[sources_key]),
+            destinations_key: float(point[destinations_key]),
             selectivity_key: sel,
             convolution_a_key:conv_a,
             convolution_b_key:conv_b,
