@@ -7,7 +7,7 @@ from pankus.storages.ring_total import ring_total
 from pankus.helpers.ram_collection import RamCollection
 from pankus.helpers.pbar import Pbar
 from pankus.defaults.config import ring_key,sd_id_key,sd_start_key,\
-    sd_end_key,destinations_key,convolution_contribution,to_ring_total_key,\
+    sd_end_key,convolution_contribution,to_ring_total_key,\
     in_ring_total_key,convolution_a_key,convolution_b_key,convolution_alpha_key
 import csv
 
@@ -60,7 +60,6 @@ def export_convolution_contribution():
             if not ring_total_info:
                 continue
 
-
             conv_a=region_start[convolution_a_key]
             conv_size=region_start[convolution_b_key]
             ring_start=ring_total_info[to_ring_total_key]
@@ -75,13 +74,13 @@ def export_convolution_contribution():
                 ring_key:ring_number
             }):
                 output.append({
-
                     sd_start_key:region_start[sd_id_key],
                     sd_end_key:region_end[sd_end_key],
-                    convolution_contribution:contribution/ring_size * region_start[convolution_alpha_key]
+                    ring_key:ring_number,
+                    convolution_contribution:((contribution/ring_size) * region_start[convolution_alpha_key])
                 })
 
-    fieldnames=[sd_id_key,convolution_contribution]
+    fieldnames=[sd_start_key,sd_end_key,ring_key,convolution_contribution]
     with open('convolution_contribution.csv','wb') as f:
         writer=csv.DictWriter(f,fieldnames=fieldnames)
         writer.writeheader()
