@@ -12,6 +12,30 @@ from pankus.defaults.config import ring_key,sd_id_key,sd_start_key,\
 import csv
 
 
+def ring_contribution(ring_start,ring_size,conv_a,conv_size):
+    conv_end=conv_a+conv_size
+    ring_end=ring_start+ring_size
+
+    # convolution inside ring
+    if ring_start < conv_a and ring_end > conv_end:
+        contribution=conv_size
+
+    # convolution begins in ring
+    elif ring_start <= conv_a and ring_end > conv_a and ring_end <= conv_end:
+        contribution=ring_end-conv_a
+
+    #convolution ends in ring
+    elif ring_start < conv_end and ring_end >= conv_end:
+        contribution=conv_end-ring_start
+
+    #convolution spans over ring
+    elif ring_start > conv_a and ring_end < conv_end:
+        contribution=ring_size
+    else:
+        contribution=0.0
+
+    return contribution
+
 def export_convolution_contribution():
 
     ram_src_dst=RamCollection(src_dst)
@@ -36,41 +60,15 @@ def export_convolution_contribution():
             if not ring_total_info:
                 continue
 
-            contribution=0.0
+
             conv_a=region_start[convolution_a_key]
             conv_size=region_start[convolution_b_key]
-            conv_end=conv_a+conv_size
             ring_start=ring_total_info[to_ring_total_key]
             ring_size=ring_total_info[in_ring_total_key]
-            ring_end=ring_start+ring_size
 
-            # convolution inside ring
-            if ring_start < conv_a and ring_end > conv_end:
-                contribution=conv_size
-
-            # convolution begins in ring
-            elif ring_start <= conv_a and ring_end > conv_a and ring_end <= conv_end:
-                contribution=ring_end-conv_a
-
-            #convolution ends in ring
-            elif ring_start < conv_end and ring_end >= conv_end:
-                contribution=conv_end-ring_start
-
-            #convolution spans over ring
-            elif ring_start > conv_a and ring_end < conv_end:
-                contribution=ring_size
-            else:
-                contribution=0.0
-
-            # for negative conv_a convolutions spans over ring
-            if conv_a<0 and ring_end <= -conv_a:
-                contribution+=ring_size
-
-            # for negative conv_a convolutions starts in ring
-            elif conv_a<0 and ring_end > -conv_a and ring_start < -conv_a:
-                contribution+=-conv_a-ring_start
-            else:
-                pass
+            contribution=ring_contribution(ring_start,ring_size,conv_a,conv_size)
+            if conv_a < 0:
+                contribution+= ring_contribution(ring_start,ring_size,(-conv_a-conv_size),conv_size)
 
             for region_end in ram_ring.find({
                 sd_start_key:region_start[sd_id_key],
