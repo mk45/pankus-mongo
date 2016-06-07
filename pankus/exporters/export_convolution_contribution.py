@@ -44,6 +44,7 @@ def export_convolution_contribution():
     max_ring = max([r[ring_key] for r in ram_ring.find()])
 
 
+
     output=[]
     pbar = Pbar('exporting: ',ram_src_dst.count())
 
@@ -59,6 +60,11 @@ def export_convolution_contribution():
 
             if not ring_total_info:
                 continue
+
+            ring_sd_count=sum([1 for i in ram_ring.find({
+                sd_start_key:region_start[sd_id_key],
+                ring_key:ring_number
+            })])
 
             conv_a=region_start[convolution_a_key]
             conv_size=region_start[convolution_b_key]
@@ -77,7 +83,7 @@ def export_convolution_contribution():
                     sd_start_key:region_start[sd_id_key],
                     sd_end_key:region_end[sd_end_key],
                     ring_key:ring_number,
-                    convolution_contribution:((contribution/ring_size) * region_start[convolution_alpha_key])
+                    convolution_contribution:((contribution/ring_size)/ring_sd_count * region_start[convolution_alpha_key])
                 })
 
     fieldnames=[sd_start_key,sd_end_key,ring_key,convolution_contribution]
